@@ -90,6 +90,8 @@
     "cace2760-8e07-4286-b392-238d516d9c09": {
       "type": "pro-contact-form",
       "settings": {
+        "page_title": "",
+        "show_phone": true
       }
     }
   },
