@@ -1,72 +1,89 @@
 {%- assign disable_sticky_header = false -%}
 
 {%- if section.settings.enable -%}
-  {%- if section.settings.collection_image_enable and collection.image -%}
-    <div
-      id="CollectionHeaderSection"
-      data-section-id="{{ section.id }}"
-      data-section-type="collection-header"
-      {% if section.settings.parallax %}data-parallax="true"{% endif %}>
+    {%- if section.settings.collection_image_enable and collection.image -%}
 
-      <div class="collection-hero">
+        <div
+                id="CollectionHeaderSection"
+                data-section-id="{{ section.id }}"
+                data-section-type="collection-header"
+                {% if section.settings.parallax %}data-parallax="true"{% endif %}>
 
-        {%- if section.settings.parallax -%}
-          <parallax-image class="parallax-container">
-            <div class="parallax-image" data-movement="15%" data-parallax-image data-angle="{{ section.settings.parallax_direction }}">
-        {%- endif -%}
+            <div class="collection-hero">
 
-          {%- render 'image-element',
-              img: collection.image,
-              img_width: 2400,
-              classes: 'collection-hero__image image-fit',
-              preload: true,
-              loading: 'eager',
-          -%}
+            {%- if section.settings.parallax -%}
+                <parallax-image class="parallax-container">
+                    <div class="parallax-image" data-movement="15%" data-parallax-image
+                         data-angle="{{ section.settings.parallax_direction }}">
+                        {%- endif -%}
 
-        {%- if section.settings.parallax -%}
+                        {%- render 'image-element',
+                                img: collection.image,
+                                img_width: 2400,
+                                classes: 'collection-hero__image image-fit',
+                                preload: true,
+                                loading: 'eager',
+                        -%}
+
+                        {%- if section.settings.parallax -%}
+                    </div>
+                </parallax-image>
+                {%- endif -%}
+
+                {% if section.settings.collection_title_below == false %}
+                    <div class="collection-hero__content">
+                        <div class="page-width">
+                            <header class="section-header section-header--hero">
+                                <div class="section-header__shadow">
+                                    {%- render 'breadcrumbs' -%}
+                                    <h1 class="section-header__title">
+                                        {{ collection.title }}
+                                    </h1>
+                                </div>
+                            </header>
+                        </div>
+                    </div>
+                {% endif %}
             </div>
-          </parallax-image>
-        {%- endif -%}
-
-        <div class="collection-hero__content">
-          <div class="page-width">
-            <header class="section-header section-header--hero">
-              <div class="section-header__shadow">
+        </div>
+    {%- else -%}
+        {%- assign disable_sticky_header = true -%}
+        <div class="page-width page-content page-content--top">
+            <header class="section-header section-header--flush">
                 {%- render 'breadcrumbs' -%}
                 <h1 class="section-header__title">
-                  {{ collection.title }}
+                    {{ collection.title }}
                 </h1>
-              </div>
             </header>
-          </div>
         </div>
-      </div>
-    </div>
-  {%- else -%}
-    {%- assign disable_sticky_header = true -%}
-    <div class="page-width page-content page-content--top">
-      <header class="section-header section-header--flush">
-        {%- render 'breadcrumbs' -%}
-        <h1 class="section-header__title">
-          {{ collection.title }}
-        </h1>
-      </header>
-    </div>
-  {%- endif -%}
+    {%- endif -%}
 {% else %}
-  {%- assign disable_sticky_header = true -%}
+    {%- assign disable_sticky_header = true -%}
 {%- endif -%}
 
 {%- if disable_sticky_header -%}
-  {% comment %}
-    Div to trigger theme.CollectionHeader JS
-  {% endcomment %}
-  <div
-    id="CollectionHeaderSection"
-    data-section-id="{{ section.id }}"
-    data-section-type="collection-header">
-  </div>
+    {% comment %}
+      Div to trigger theme.CollectionHeader JS
+    {% endcomment %}
+    <div
+            id="CollectionHeaderSection"
+            data-section-id="{{ section.id }}"
+            data-section-type="collection-header">
+    </div>
 {%- endif -%}
+
+{% if section.settings.collection_title_below == true and collection.image %}
+    <div class="collection-hero__title">
+        <div class="page-width">
+            <header class="section-header section-header--title">
+                {%- render 'breadcrumbs' -%}
+                <h1 class="section-header__title">
+                    {{ collection.title }}
+                </h1>
+            </header>
+        </div>
+    </div>
+{% endif %}
 
 {% schema %}
 {
@@ -105,10 +122,20 @@
           "label": "t:sections.background-image-text.settings.parallax_direction.options.left.label"
         }
       ]
+    },
+    {
+      "type": "checkbox",
+      "id": "collection_title_below",
+      "label": "Show title below collection image",
+      "default": false
     }
   ],
   "disabled_on": {
-    "groups": ["footer", "header", "custom.popups"]
+    "groups": [
+      "footer",
+      "header",
+      "custom.popups"
+    ]
   }
 }
 {% endschema %}

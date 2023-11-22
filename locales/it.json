@@ -2,7 +2,7 @@
   "general": {
     "404": {
       "title": "404 Pagina non trovata",
-      "subtext_html": "<p>La pagina che stavi cercando non esiste. </p><p><a href='{{ url }}'>Continua a comprare</a></p>"
+      "subtext_html": "<p>La pagina che stavi cercando non esiste. <\/p><p><a href='{{ url }}'>Continua a comprare<\/a><\/p>"
     },
     "accessibility": {
       "skip_to_content": "Vai direttamente ai contenuti",
@@ -25,7 +25,7 @@
       "login_form_submit": "Accedi",
       "signup_form_email_label": "Indirizzo email",
       "signup_form_success": "Ti invieremo un'e-mail appena prima dell'apertura!",
-      "admin_link_html": "Sei il proprietario di un negozio? <a href=\"/admin\" class=\"text-link\">Entra qui</a>",
+      "admin_link_html": "Sei il proprietario di un negozio? <a href=\"\/admin\" class=\"text-link\">Entra qui<\/a>",
       "password_link": "Password",
       "powered_by_shopify_html": "Questo negozio sarà ospitato su {{ shopify }}"
     },
@@ -85,8 +85,8 @@
       "get_directions": "Ottieni indicazioni",
       "address_error": "Errore nella ricerca di questo indirizzo",
       "address_no_results": "Nessun risultato per questo indirizzo",
-      "address_query_limit_html": "Hai superato il limite di utilizzo delle API di Google. Considera l'aggiornamento ad un <a href=\"https://developers.google.com/maps/premium/usage-limits\">Piano Premium</a>.",
-      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps. Crea e attiva i permessi <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> e <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> della tua applicazione."
+      "address_query_limit_html": "Hai superato il limite di utilizzo delle API di Google. Considera l'aggiornamento ad un <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Piano Premium<\/a>.",
+      "auth_error_html": "Si è verificato un problema durante l'autenticazione del tuo account Google Maps. Crea e attiva i permessi <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> e <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> della tua applicazione."
     },
     "slideshow": {
       "play_slideshow": "Avvia presentazione",
@@ -126,12 +126,12 @@
       "update": "Aggiorna il carrello",
       "checkout": "Check-out",
       "empty": "Il tuo carrello è attualmente vuoto.",
-      "continue_browsing_html": "<a href='{{ url }}'>Continua a comprare</a>",
+      "continue_browsing_html": "<a href='{{ url }}'>Continua a comprare<\/a>",
       "close_cart": "Chiudi il carrello",
       "reduce_quantity": "Riduci la quantità dell'articolo di uno",
       "increase_quantity": "Aumenta la quantità di un articolo",
       "terms": "Sono d'accordo con i termini e le condizioni",
-      "terms_html": "Sono d'accordo con i <a href='{{ url }}' target='_blank'>termini e condizioni</a>",
+      "terms_html": "Sono d'accordo con i <a href='{{ url }}' target='_blank'>termini e condizioni<\/a>",
       "terms_confirm": "Devi accettare i termini e le condizioni di vendita per procedere al pagamento",
       "max_quantity": "Puoi solo avere {{ quantity }} di {{ title }} nel tuo carrello."
     },
@@ -325,7 +325,7 @@
       "add_to_cart": "Aggiungi al carrello",
       "preorder": "Pre-ordine",
       "include_taxes": "Imposte incluse.",
-      "shipping_policy_html": "<a href='{{ link }}'>Spedizione</a> calcolata alla cassa.",
+      "shipping_policy_html": "<a href='{{ link }}'>Spedizione<\/a> calcolata alla cassa.",
       "will_not_ship_until": "Pronto per la spedizione {{ date }}",
       "will_be_in_stock_after": "Di nuovo in magazzino {{ date }}",
       "waiting_for_stock": "Inventario in arrivo",
@@ -339,8 +339,8 @@
       "check_other_stores": "Verifica la disponibilità in altri negozi",
       "pick_up_available": "Ritiro disponibile",
       "pick_up_currently_unavailable": "Ritiro attualmente non disponibile",
-      "pick_up_available_at_html": "Ritiro disponibile a <strong>{{ location_name }}</strong>",
-      "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso <strong>{{ location_name }}</strong>"
+      "pick_up_available_at_html": "Ritiro disponibile a <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Ritiro attualmente non disponibile presso <strong>{{ location_name }}<\/strong>"
     }
   },
   "gift_cards": {

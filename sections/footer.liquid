@@ -24,7 +24,7 @@
   {%- endstyle -%}
 {%- endif -%}
 
-<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section">
+<footer class="site-footer" data-section-id="{{ section.id }}" data-section-type="footer-section" role="contentinfo">
   <div class="page-width">
 
     <div class="grid">
@@ -67,6 +67,8 @@
                 render 'footer-menu', block: block
               when 'follow_shop_cta'
                 render 'follow-shop-cta', block: block
+              when 'page_link'
+                render 'footer-link-button', block: block
             endcase
           -%}
         </div>
@@ -317,6 +319,31 @@
           "unit": "%"
         }
       ]
+    },
+    {
+      "type": "page_link",
+      "name":"Page Link",
+      "settings": [
+          {
+            "type": "text",
+            "id": "page_link_text",
+            "label": "Page Link Text"
+          },
+          {
+            "type": "url",
+            "id": "page_link_url",
+            "label": "Page Link URL"
+          },
+          {
+            "type": "range",
+            "id": "container_width",
+            "label": "t:sections.footer.blocks.newsletter_and_social.settings.container_width.label",
+            "default": 25,
+            "min": 15,
+            "max": 95,
+            "unit": "%"
+          }
+        ]
     }
   ],
   "default": {

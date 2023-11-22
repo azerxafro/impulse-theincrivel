@@ -1,1 +1,163 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"faq":{"type":"faq","blocks":{"faq-0":{"type":"rich-text","settings":{"title":"Shipping","text":""}},"faq-1":{"type":"question","settings":{}},"faq-2":{"type":"question","settings":{}},"faq-3":{"type":"rich-text","settings":{"title":"Returns","text":""}},"faq-4":{"type":"question","settings":{}}},"block_order":["faq-0","faq-1","faq-2","faq-3","faq-4"],"settings":{"title":""}}},"order":["main","faq"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "faq-0": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Shipping",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "faq-1": {
+          "type": "question",
+          "settings": {
+            "title": "How do you ship?",
+            "text": "<p><strong>Free shipping for all orders over $15<\/strong><\/p><p>For standard orders we use USPS as our default shipping service, but you can also choose from faster options if you're in a rush: 2nd Day Air and Next Day Air - available for orders placed Monday through Thursday before 2PM, Friday before 12PM Mountain Standard Time, holidays excluded.<\/p><p>Most standard orders are processed the day they are placed; orders placed on business holidays, on weekends, or after 2 p.m. Mountain Standard Time will be processed the following business day. <strong>All standard orders will be shipped within 2-5 business days.<\/strong><\/p><p>Orders shipped 2nd Day and Next Day cannot be delivered to P.O. boxes.<\/p>"
+          }
+        },
+        "faq-2": {
+          "type": "question",
+          "settings": {
+            "title": "Do you ship internationally?",
+            "text": "<p>Yes, we do ship internationally with an additional fee. Orders to Canada have a $10.00 shipping charge and all other international orders have a $40.00 shipping charge. We ship free to US military PO boxes.<\/p>"
+          }
+        },
+        "f05182a2-e19e-4116-82f7-cd059587e099": {
+          "type": "question",
+          "settings": {
+            "title": "Can I place an expedited order?",
+            "text": "<p>We offer overnight shipping and 2 day shipping within the continental US. We do not ship Saturday and Sunday. Please refer to our office and warehouse hours for more details.<\/p>"
+          }
+        },
+        "f365c329-4c16-4c03-b277-5afea5c5539c": {
+          "type": "question",
+          "settings": {
+            "title": "When will I receive my package?",
+            "text": "<p>Once your order ships, you will be provided tracking information sent to your provided email address. Orders will be sent out the day after your order has been placed with USPS.<\/p>"
+          }
+        },
+        "cf8b47dd-7ed7-4a07-945e-f1c0d3623345": {
+          "type": "rich-text",
+          "settings": {
+            "title": "Products",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "5d7a2cf6-c9bd-4b20-b181-bcb3b9670828": {
+          "type": "question",
+          "settings": {
+            "title": "Do we replace parts?",
+            "text": "<p>We do not replace parts. However, we strive to meet our customers’ expectations 100%, and offer a lifetime warranty on a wide selection of our products. Please send us a photo of the defective product along with a valid shipping address and we will let you know if your product qualifies for a free replacement.<\/p>"
+          }
+        },
+        "05bf181c-0737-45e7-a769-0e4de8ff2680": {
+          "type": "question",
+          "settings": {
+            "title": "Do we replace sunglasses?",
+            "text": "<p>We do not guarantee that our products will always work on the vast array of sunglasses out there. We suggest testing our floating products in shallow water before use. Chums is not responsible for any loss due to misuse of products. However, we are happy to send you a replacement of your broken or damaged Chums.<\/p>"
+          }
+        },
+        "3d74c1e4-45a3-4b7f-b497-8d26c08daa03": {
+          "type": "question",
+          "settings": {
+            "title": "Will you replace any personal items ruined from water damage?",
+            "text": "<p>No, most of our Storm Series products are constructed to withstand a quick dunking, not continued submersion. Furthermore, please double check if the item you are purchasing is <em>water resistant<\/em> before full submersion. We are not able to fulfill warranty or refund products that are not owned or sold by Chums.<\/p>"
+          }
+        },
+        "faq-4": {
+          "type": "question",
+          "settings": {
+            "title": "Where are Chums products made?",
+            "text": "<p>The majority of our products are made here, in the USA.<\/p>"
+          }
+        },
+        "76013562-97f1-4fbe-8a0f-8363364f36c8": {
+          "type": "question",
+          "settings": {
+            "title": "Are your products Proposition 65 compliant?",
+            "text": "<p>Chums is committed to providing safe, high quality products. We have worked with our vendors and our supply chain partners to ensure the purchase of raw materials and finished goods meet Prop 65 standards.<\/p>"
+          }
+        },
+        "faq-3": {
+          "type": "rich-text",
+          "settings": {
+            "title": "ORDERS",
+            "text": "",
+            "align_text": "left"
+          }
+        },
+        "599698cf-6c2b-412d-934d-a7d74a3d3734": {
+          "type": "question",
+          "settings": {
+            "title": "My order is not going through\/ how do I know my order was processed?",
+            "text": "<p>We suggest using the web browser Google Chrome to place your order as our website seems to work best on this platform. Once your order is placed you should receive an email confirmation. If you do not receive one, feel free to contact us at cs@chums.com.<\/p>"
+          }
+        },
+        "cbfa6d3f-fb3c-4112-bd42-cd9c53a0a450": {
+          "type": "question",
+          "settings": {
+            "title": "Can I place an order over the phone?",
+            "text": "<p>Yes! When you call us one of our friendly Customer Service Representatives will place your order and answer any questions or concerns you may have. Give us a call us at (800) 222-2486.<\/p>"
+          }
+        },
+        "fe6d0dd4-9df3-43e2-b382-f978cfa8c300": {
+          "type": "question",
+          "settings": {
+            "title": "What are your office hours?",
+            "text": "<p>We are open Monday through Thursday from 8am to 5pm MST, Fridays from 8am to 3pm, Saturday and Sundays we are closed. Our office and warehouse hours are subject to change during holidays.<\/p>"
+          }
+        },
+        "4de08714-eb27-4eb0-a1ba-9f5fa657284d": {
+          "type": "question",
+          "settings": {
+            "title": "Where can I buy Chums in person?",
+            "text": "<p>Find a store near you with our <a href=\"\/pages\/find-a-store\" title=\"Find a Store\">store locator<\/a>. <\/p>"
+          }
+        },
+        "1107b36e-1f91-4e5c-a949-3319ea0d3762": {
+          "type": "question",
+          "settings": {
+            "title": "Where is a Chums retail store?",
+            "text": "<p>You can purchase Chums at our warehouse location in Salt Lake City.<\/p><p>Salt Lake City: 2424 S. 2570 W. SLC, UT 84119<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq-0",
+        "faq-1",
+        "faq-2",
+        "f05182a2-e19e-4116-82f7-cd059587e099",
+        "f365c329-4c16-4c03-b277-5afea5c5539c",
+        "cf8b47dd-7ed7-4a07-945e-f1c0d3623345",
+        "5d7a2cf6-c9bd-4b20-b181-bcb3b9670828",
+        "05bf181c-0737-45e7-a769-0e4de8ff2680",
+        "3d74c1e4-45a3-4b7f-b497-8d26c08daa03",
+        "faq-4",
+        "76013562-97f1-4fbe-8a0f-8363364f36c8",
+        "faq-3",
+        "599698cf-6c2b-412d-934d-a7d74a3d3734",
+        "cbfa6d3f-fb3c-4112-bd42-cd9c53a0a450",
+        "fe6d0dd4-9df3-43e2-b382-f978cfa8c300",
+        "4de08714-eb27-4eb0-a1ba-9f5fa657284d",
+        "1107b36e-1f91-4e5c-a949-3319ea0d3762"
+      ],
+      "settings": {
+        "title": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "faq"
+  ]
+}

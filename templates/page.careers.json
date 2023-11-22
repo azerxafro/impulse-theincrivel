@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "7a2d4ba1-1c82-491d-bcf9-44b9630e0d9a": {
+      "type": "text-and-image",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Careers1.jpg",
+        "image_mask": "none",
+        "image2_mask": "none",
+        "subtitle": "",
+        "title": "",
+        "text": "<p>At Chums we are lucky enough to work in an environment that allows us to explore our shared passion for the outdoors. Chums has been the outdoor industry leader in manufacturing innovative accessories for three decades. <\/p><p>Each year we continue to grow by translating our passion for all things outdoor into creating the best and most versatile accessories on the planet. <\/p><p><\/p><p>If you value a casual, team-oriented atmosphere, have a down to earth approach, and possess a drive to innovate, Chums may be the place for you.<\/p>",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "primary",
+        "align_text": "left",
+        "image_width": "50",
+        "layout": "left",
+        "divider": false,
+        "top_padding": true,
+        "bottom_padding": true,
+        "lazyload_images": true
+      }
+    },
+    "c831532e-bb03-40d3-a910-6e25f2a71a47": {
+      "type": "open-positions-live",
+      "settings": {
+        "show_careers": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "7a2d4ba1-1c82-491d-bcf9-44b9630e0d9a",
+    "c831532e-bb03-40d3-a910-6e25f2a71a47"
+  ]
+}

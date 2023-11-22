@@ -1,0 +1,23 @@
+{% comment %}
+ - filter: top level filter
+ - filter_value: current filter_value
+{% endcomment %}
+
+{%- liquid
+    assign parent = filter.label | handleize
+    assign label = filter_value.label | handleize
+    assign labelText = filter_value.label
+    case parent
+        when 'sunglass-fit'
+        case label
+            when 'regular'
+                assign labelText = 'Normal Frames (5-10 mm)'
+            when 'small'
+                assign labelText = 'Small Frames (2-4 mm)'
+            when 'large'
+                assign labelText = 'Large Frames (2-4 mm)'
+            when 'kids'
+                assign labelText = 'Kids'
+        endcase
+    endcase
+-%}

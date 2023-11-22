@@ -101,6 +101,9 @@
                 {% if image_set %}
                   data-set-name="{{image_set_group}}"
                   data-group="{{image_set_full}}"
+                {% else %}
+                    data-no-group="all"
+                    data-media-id="{{ media.id }}"
                 {% endif %}>
                 <a
                   href="{{ media.preview_image | img_url: product_zoom_size }}"

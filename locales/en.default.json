@@ -2,7 +2,7 @@
   "general": {
     "404": {
       "title": "404 Page Not Found",
-      "subtext_html": "<p>The page you were looking for does not exist. </p><p><a href='{{ url }}'>Continue shopping</a></p>"
+      "subtext_html": "<p>The page you were looking for does not exist. <\/p><p><a href='{{ url }}'>Continue shopping<\/a><\/p>"
     },
     "accessibility": {
       "skip_to_content": "Skip to content",
@@ -25,7 +25,7 @@
       "login_form_submit": "Enter",
       "signup_form_email_label": "Email",
       "signup_form_success": "We will send you an email right before we open!",
-      "admin_link_html": "Store owner? <a href=\"/admin\" class=\"text-link\">Log in here</a>",
+      "admin_link_html": "Store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link": "Password",
       "powered_by_shopify_html": "This shop will be powered by {{ shopify }}"
     },
@@ -85,8 +85,8 @@
       "get_directions": "Get directions",
       "address_error": "Error looking up that address",
       "address_no_results": "No results for that address",
-      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https://developers.google.com/maps/premium/usage-limits\">Premium Plan</a>.",
-      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https://developers.google.com/maps/documentation/javascript/get-api-key\">JavaScript API</a> and <a href=\"https://developers.google.com/maps/documentation/geocoding/get-api-key\">Geocoding API</a> permissions of your app."
+      "address_query_limit_html": "You have exceeded the Google API usage limit. Consider upgrading to a <a href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\">Premium Plan<\/a>.",
+      "auth_error_html": "There was a problem authenticating your Google Maps account. Create and enable the <a href=\"https:\/\/developers.google.com\/maps\/documentation\/javascript\/get-api-key\">JavaScript API<\/a> and <a href=\"https:\/\/developers.google.com\/maps\/documentation\/geocoding\/get-api-key\">Geocoding API<\/a> permissions of your app."
     },
     "slideshow": {
       "play_slideshow": "Play slideshow",
@@ -126,12 +126,12 @@
       "update": "Update cart",
       "checkout": "Check out",
       "empty": "Your cart is currently empty.",
-      "continue_browsing_html": "<a href='{{ url }}'>Continue shopping</a>",
+      "continue_browsing_html": "<a href='{{ url }}'>Continue shopping<\/a>",
       "close_cart": "Close cart",
       "reduce_quantity": "Reduce item quantity by one",
       "increase_quantity": "Increase item quantity by one",
       "terms": "I agree with the terms and conditions",
-      "terms_html": "I agree with the <a href='{{ url }}' target='_blank'>terms and conditions</a>",
+      "terms_html": "I agree with the <a href='{{ url }}' target='_blank'>terms and conditions<\/a>",
       "terms_confirm": "You must agree with the terms and conditions of sales to check out",
       "max_quantity": "You can only have {{ quantity }} of {{ title }} in your cart."
     },
@@ -171,6 +171,23 @@
       "message": "Message",
       "send": "Send",
       "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
+    },
+    "pro-form": {
+      "name": "Name",
+      "email": "Email",
+      "address": "Address",
+      "city": "City",
+      "province": "State\/Province",
+      "zip": "Postal\/Zip code",
+      "phone": "Phone number",
+      "message": "Message",
+      "reason": "Why do you want to be a Chums Pro?",
+      "company": "Company",
+      "website": "Website",
+      "title": "Title",
+      "explain": "Explain Here",
+      "send": "Send",
+      "post_success": "Thanks for contacting us. We'll get back to you as soon as possible."
     }
   },
   "customer": {
@@ -201,7 +218,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip code",
+      "zip": "Postal\/Zip code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add address",
@@ -325,7 +342,7 @@
       "add_to_cart": "Add to cart",
       "preorder": "Pre-order",
       "include_taxes": "Tax included.",
-      "shipping_policy_html": "<a href='{{ link }}'>Shipping</a> calculated at checkout.",
+      "shipping_policy_html": "<a href='{{ link }}'>Shipping<\/a> calculated at checkout.",
       "will_not_ship_until": "Ready to ship {{ date }}",
       "will_be_in_stock_after": "Back in stock {{ date }}",
       "waiting_for_stock": "Inventory on the way",
@@ -339,8 +356,8 @@
       "check_other_stores": "Check availability at other stores",
       "pick_up_available": "Pickup available",
       "pick_up_currently_unavailable": "Pickup currently unavailable",
-      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}</strong>",
-      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}</strong>"
+      "pick_up_available_at_html": "Pickup available at <strong>{{ location_name }}<\/strong>",
+      "pick_up_unavailable_at_html": "Pickup currently unavailable at <strong>{{ location_name }}<\/strong>"
     }
   },
   "gift_cards": {

@@ -1,0 +1,130 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "a4f464a2-0415-47b7-a857-90b76513856c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16359446216901__a4f464a2-0415-47b7-a857-90b76513856c-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/customize.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16359446216901__a4f464a2-0415-47b7-a857-90b76513856c-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": false,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "2932d8a6-3863-458d-99e3-9ca04146dc2f": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16359446216901__2932d8a6-3863-458d-99e3-9ca04146dc2f-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Customize your Product"
+          }
+        }
+      },
+      "block_order": [
+        "template--16359446216901__2932d8a6-3863-458d-99e3-9ca04146dc2f-heading-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "314d93d6-a7e3-49ce-973b-da27dfb25859": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16359446216901__314d93d6-a7e3-49ce-973b-da27dfb25859-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>You can imprint or resin dome many of our great Chums products with your logo in three easy steps:<\/p><p><strong>1<\/strong> Send vector artwork (Illustrator or EPS vector files) to <a href=\"mailto:cs@chums.com\">cs@chums.com<\/a><br\/><strong>2<\/strong> Approve virtual artwork sample<br\/><strong>3<\/strong> Order—it’s that easy!<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16359446216901__314d93d6-a7e3-49ce-973b-da27dfb25859-text-1"
+      ],
+      "settings": {
+        "align_text": "left",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "65d851de-5338-44bf-b3e1-121cc75f3dd8": {
+      "type": "text-columns",
+      "blocks": {
+        "template--16359446216901__65d851de-5338-44bf-b3e1-121cc75f3dd8-text_block-1": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/screen-printing.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Screen Printing",
+            "text": "<p>One-color screen printing, available on a wide variety of products. Lead times as short as 2 weeks after art approval with <strong>minimums as low as 50 pieces <\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "template--16359446216901__65d851de-5338-44bf-b3e1-121cc75f3dd8-text_block-2": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image": "shopify:\/\/shop_images\/IMG_0426.jpg",
+            "image_mask": "none",
+            "image_width": 650,
+            "title": "Resin Dome",
+            "text": "<p>Eye-catching full color 3D dome, available on a wide variety of products. Lead times as short as 2 weeks after art approval with <strong>minimums as low as 50 pieces<\/strong><\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16359446216901__65d851de-5338-44bf-b3e1-121cc75f3dd8-text_block-1",
+        "template--16359446216901__65d851de-5338-44bf-b3e1-121cc75f3dd8-text_block-2"
+      ],
+      "settings": {
+        "title": "",
+        "align_text": "center",
+        "divider": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a4f464a2-0415-47b7-a857-90b76513856c",
+    "2932d8a6-3863-458d-99e3-9ca04146dc2f",
+    "314d93d6-a7e3-49ce-973b-da27dfb25859",
+    "65d851de-5338-44bf-b3e1-121cc75f3dd8"
+  ]
+}

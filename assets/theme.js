@@ -3480,7 +3480,8 @@ theme.recentlyViewed = {
   
   theme.VariantAvailability = (function() {
     var classes = {
-      disabled: 'disabled'
+      disabled: 'disabled',
+      invalid: 'invalid'
     };
   
     function availability(args) {
@@ -3515,7 +3516,7 @@ theme.recentlyViewed = {
   
             if (typeof entry === 'undefined') {
               // If option has yet to be added to the options tree, add it
-              entry = {value: variant[index], soldOut: true}
+              entry = {value: variant[index], soldOut: true, exists: false}
               options[index].push(entry);
             }
   
@@ -3525,11 +3526,13 @@ theme.recentlyViewed = {
             switch (index) {
               case 'option1':
                 // Option1 inputs should always remain enabled based on all available variants
+                  entry.exists = true;
                 entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
                 break;
               case 'option2':
                 // Option2 inputs should remain enabled based on available variants that match first option group
                 if (currentOption1 && variant['option1'] === currentOption1.value) {
+                  entry.exists = entry.exists || variant.available !== undefined;
                   entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
                 }
               case 'option3':
@@ -3538,6 +3541,7 @@ theme.recentlyViewed = {
                   currentOption1 && variant['option1'] === currentOption1.value
                   && currentOption2 && variant['option2'] === currentOption2.value
                 ) {
+                  entry.exists = entry.exists && variant.available !== undefined;
                   entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
                 }
             }
@@ -3599,15 +3603,23 @@ theme.recentlyViewed = {
           var buttonGroup = group.querySelector('.variant-input[data-value="'+ value +'"]');
           var input = buttonGroup.querySelector('input');
           var label = buttonGroup.querySelector('label');
-  
+          input.removeAttribute('disabled');
+
           // Variant exists - enable & show variant
           input.classList.remove(classes.disabled);
           label.classList.remove(classes.disabled);
+
   
           // Variant sold out - cross out option (remains selectable)
           if (obj.soldOut) {
             input.classList.add(classes.disabled);
             label.classList.add(classes.disabled);
+          }
+          input.classList.toggle(classes.invalid, !obj.exists);
+          label.classList.toggle(classes.invalid, !obj.exists);
+
+          if (!obj.exists) {
+            input.setAttribute('disabled', 'disabled');
           }
         }
       },
@@ -5733,9 +5745,10 @@ theme.recentlyViewed = {
       updateContent: function(variantId) {
         var variantSectionUrl =
           this.baseUrl +
-          '/variants/' +
-          variantId +
-          '/?section_id=store-availability';
+            (this.baseUrl.endsWith('/') ? '' : '/') +
+            'variants/' +
+            variantId +
+            '/?section_id=store-availability';
   
         var self = this;
   
@@ -7257,10 +7270,34 @@ theme.recentlyViewed = {
   
         this.initProductSlider(variant);
       },
+
+      /**
+       * CHUMS: update images for all variants to have the current image set
+       *    This turns all items with a data-no-group and data-media-id attributes
+       *    into the current selected group set, so they will show on the product
+       *    carousel
+       * @author Chums/Steve
+       * @param {string} set
+       */
+      updateImageSetAllVariants: function(set) {
+        this.cache.thumbSlider.querySelectorAll('.product__thumb-item').forEach(thumb => {
+          if (thumb.dataset.noGroup && thumb.dataset.mediaId) {
+            const el = this.cache.mainSlider.querySelector(`[data-media-id="${thumb.dataset.mediaId}"]`);
+            if (el) {
+              el.dataset.group = set;
+              thumb.dataset.group = set;
+            }
+          }
+        });
+      },
   
       // Show/hide thumbnails based on current image set
       updateImageSetThumbs: function(set) {
+        this.updateImageSetAllVariants(set);
         this.cache.thumbSlider.querySelectorAll('.product__thumb-item').forEach(thumb => {
+          if (thumb.dataset.noGroup && thumb.dataset.mediaId) {
+
+          }
           thumb.classList.toggle(classes.hidden, thumb.dataset.group !== set);
         });
       },

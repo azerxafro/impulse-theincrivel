@@ -54,13 +54,16 @@
     assign media_height = media.preview_image.height
   endif
 -%}
-
+<!-- media.alt = {{ media.alt | json }}; image_set = {{ image_set | json }}; image_set_group = {{ image_set_group | json }} image_set_full = {{ image_set_full | json }} -->
 <div
   class="product-main-slide {% if is_featured %}starting-slide{% else %}secondary-slide{% endif %}"
   data-index="{{ loopIndex0 }}"
   {% if image_set %}
     data-set-name="{{image_set_group}}"
     data-group="{{image_set_full}}"
+  {% else %}
+    data-no-group="all"
+    data-media-id="{{ media.id }}"
   {% endif %}>
 
   <div data-product-image-main class="product-image-main">
@@ -115,7 +118,7 @@
         -%}
 
         {%- if product_zoom_enable and media.media_type == 'image' -%}
-          <button type="button" class="btn btn--body btn--circle js-photoswipe__zoom product__photo-zoom">
+          <button type="button" class="btn btn--body btn--circle js-photoswipe__zoom product__photo-zoom" aria-label="Toggle Zoom">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-search" viewBox="0 0 64 64"><title>icon-search</title><path d="M47.16 28.58A18.58 18.58 0 1 1 28.58 10a18.58 18.58 0 0 1 18.58 18.58ZM54 54 41.94 42"/></svg>
             <span class="icon__fallback-text">{{ 'general.accessibility.close_modal' | t }}</span>
           </button>

@@ -1,1 +1,43 @@
-{"sections":{"main":{"type":"main-page","settings":{}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "f6cf1692-a82f-449b-856a-a303ec788e94": {
+      "type": "advanced-content",
+      "blocks": {
+        "template--16189034266821__f6cf1692-a82f-449b-856a-a303ec788e94-image-1": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "width": "50%",
+            "alignment": "center"
+          }
+        },
+        "template--16189034266821__f6cf1692-a82f-449b-856a-a303ec788e94-liquid-1": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content<\/h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.<\/p><div>custom enough?<\/div>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--16189034266821__f6cf1692-a82f-449b-856a-a303ec788e94-image-1",
+        "template--16189034266821__f6cf1692-a82f-449b-856a-a303ec788e94-liquid-1"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true,
+        "lazyload_images": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "f6cf1692-a82f-449b-856a-a303ec788e94"
+  ]
+}

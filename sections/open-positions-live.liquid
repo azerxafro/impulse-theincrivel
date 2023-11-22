@@ -1,0 +1,81 @@
+<div class="shopify-section">
+
+    {% if section.settings.show_careers == true %}
+    <div class="page-width">
+        <style>
+            #job-openings {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-bottom: 3rem;
+            }
+            #job-openings > div {
+                flex: 0 1 80%;
+            }
+            #job-openings .job-openings--list small {
+                font-weight: 300;
+            }
+            #job-openings a {
+                text-decoration: none;
+                border-bottom: 2px solid rgba(0,0,0,.2);
+                position: relative;
+                display: inline-block;
+            }
+            #job-openings a:after {
+                content: '';
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                width: 0;
+                border-bottom: 2px solid currentColor;
+                transition: width .5s ease;
+            }
+            #job-openings a:hover:after,
+            #job-openings a:focus:after {
+                width: 100%;
+            }
+        </style>
+        {% comment %}
+            The listed javascript loaded from https://intranet.chums.com/apps/current-openings/manifest.php
+            loads a react applet for rendering open job positions.
+            See: https://intranet.chums.com/apps/job-postings for editing.
+        {% endcomment %}
+        <div id="job-openings"></div>
+    </div>
+    {% endif %}
+    <script type="application/javascript" src="https://intranet.chums.com/apps/current-openings/main.js.php" ></script>
+    <script type="application/javascript" src="https://intranet.chums.com/apps/current-openings/vendors.js.php" ></script>
+</div>
+
+
+{% javascript %}
+{% endjavascript %}
+
+{% schema %}
+{
+  "name": "Careers - Open Positions",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Chums Open Positions Section"
+    },
+    {
+      "type": "paragraph",
+      "content": "This section loads a single-page React app from Chums Intranet, for editing job postings please use the Chums Intranet Job Postings Tool"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_careers",
+      "label": "Load careers from Chums Intranet",
+      "default": true
+    }
+  ],
+  "presets": [
+    {
+      "name": "careers-live",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}

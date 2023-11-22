@@ -1,0 +1,103 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+      }
+    },
+    "a65ff1a9-a04c-4d3e-9d7f-7bc96d9bb88e": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16359545733317__a65ff1a9-a04c-4d3e-9d7f-7bc96d9bb88e-image-1": {
+          "type": "image",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "title_size": 80,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "color_accent": "rgba(0,0,0,0)",
+            "text_align": "vertical-center horizontal-center",
+            "image": "shopify:\/\/shop_images\/1-520.jpg",
+            "parallax_direction": "top",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16359545733317__a65ff1a9-a04c-4d3e-9d7f-7bc96d9bb88e-image-1"
+      ],
+      "settings": {
+        "section_height": "650px",
+        "mobile_height": "auto",
+        "parallax": true,
+        "style": "bars",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "lazyload_images": true
+      }
+    },
+    "f4ff5d0a-5fd8-4b72-8f45-018d478ffd54": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16359545733317__f4ff5d0a-5fd8-4b72-8f45-018d478ffd54-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>We're stoked that you want to be part of the Chums Pro Team. This is a select team of Guide, Industry Professionals and just rad individuals that we are recruiting to help spread the word about Chums. Fill out our application and let's work together.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16359545733317__f4ff5d0a-5fd8-4b72-8f45-018d478ffd54-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "1ff05a4a-2159-453d-8a3f-364f161b0dfa": {
+      "type": "rich-text",
+      "blocks": {
+        "template--16359545733317__1ff05a4a-2159-453d-8a3f-364f161b0dfa-heading-1": {
+          "type": "heading",
+          "settings": {
+            "title": "Easy as 1-2-3"
+          }
+        },
+        "template--16359545733317__1ff05a4a-2159-453d-8a3f-364f161b0dfa-text-1": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>1. Apply to become a Chums Pro<\/p><p>2. Get a Chums Pro Team Package (on us)<\/p><p>3. Get a personalized discount code for future purchases<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16359545733317__1ff05a4a-2159-453d-8a3f-364f161b0dfa-heading-1",
+        "template--16359545733317__1ff05a4a-2159-453d-8a3f-364f161b0dfa-text-1"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "divider": false
+      }
+    },
+    "cace2760-8e07-4286-b392-238d516d9c09": {
+      "type": "pro-contact-form",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "a65ff1a9-a04c-4d3e-9d7f-7bc96d9bb88e",
+    "f4ff5d0a-5fd8-4b72-8f45-018d478ffd54",
+    "1ff05a4a-2159-453d-8a3f-364f161b0dfa",
+    "cace2760-8e07-4286-b392-238d516d9c09"
+  ]
+}
