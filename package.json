@@ -1,6 +1,6 @@
 {
   "name": "chums-impulse-dev",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "devDependencies": {
     "@types/google.maps": "^3.48.8",
     "auto-changelog": "^2.4.0",
