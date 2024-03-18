@@ -1,9 +1,8 @@
 {
   "sections": {
     "main": {
-      "type": "page-store-locator",
+      "type": "main-page",
       "settings": {
-        "google_maps_api_key": "AIzaSyAIhAbnZbipYL9YqUzsRn1Mqrc_Wt8VroQ"
       }
     }
   },

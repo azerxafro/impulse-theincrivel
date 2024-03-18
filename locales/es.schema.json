@@ -1425,6 +1425,9 @@
           "label": "Activar las muestras de color",
           "info": "[Ver instrucciones de configuración](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
         },
+        "enable_swatch_labels": {
+          "label": "Mostrar etiquetas de muestra"
+        },
         "enable_sort": {
           "label": "Mostrar opciones de clasificación"
         }
@@ -1582,6 +1585,9 @@
         "enable_color_swatches": {
           "label": "Activar las muestras de color",
           "info": "[Ver instrucciones de configuración](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
+        },
+        "enable_swatch_labels": {
+          "label": "Mostrar etiquetas de muestra"
         },
         "per_row": {
           "label": "Productos por fila"
@@ -4217,6 +4223,9 @@
         }
       }
     },
+    "enable_swatch_labels": {
+      "label": "Mostrar etiquetas de muestra"
+    },
     "lazyload_images": {
       "label": "Imágenes de carga diferida",
       "info": "La carga diferida debe estar habilitada cuando las imágenes de la sección están debajo del pliegue. [Más información](https:\/\/archetypethemes.co\/blogs\/support\/what-is-lazyloading)"
@@ -4430,7 +4439,7 @@
     "gift_card": {
       "show_gift_card_recipient": {
         "label": "Mostrar el formulario de información de la persona destinataria para las tarjetas de regalo",
-        "info": "Opcionalmente, las tarjetas de regalo se pueden enviar directamente a una persona destinataria en la fecha programada junto con un mensaje personal. [Más información](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+        "info": "Opcionalmente, las tarjetas de regalo se pueden enviar directamente a un destinatario junto con un mensaje personal. [Más información](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
       }
     },
     "follow_on_shop": {

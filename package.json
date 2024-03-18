@@ -11,5 +11,10 @@
     "pull": "shopify theme pull --environment impulse",
     "start-dev": "npm run pull && npm run dev",
     "version": "auto-changelog -p && git add CHANGELOG.md"
+  },
+  "auto-changelog": {
+    "template": "keepachangelog",
+    "unreleased": true,
+    "commitLimit": false
   }
 }

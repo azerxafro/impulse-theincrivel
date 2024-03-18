@@ -391,8 +391,7 @@
             "footer-promotions-2"
           ],
           "settings": {
-            "hide_homepage": false,
-            "image_size": "wide"
+            "hide_homepage": false
           }
         }
       }

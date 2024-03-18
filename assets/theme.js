@@ -979,10 +979,7 @@ theme.recentlyViewed = {
       },
   
       _updateImages: function(variant) {
-        var variantImage = variant.featured_image || {};
-        var currentVariantImage = this.currentVariant && this.currentVariant.featured_image || {};
-  
-        if (!variant.featured_image || variantImage.src === currentVariantImage.src) {
+        if (!variant.featured_image) {
           return;
         }
   
@@ -2045,19 +2042,6 @@ theme.recentlyViewed = {
   
         setTransitionHeight(parentCollapsibleEl, totalHeight, false, false);
       }
-  
-      // If Shopify Product Reviews app installed,
-      // resize container on 'Write review' click
-      // that shows form
-      if (window.SPR) {
-        var btn = container.querySelector('.spr-summary-actions-newreview');
-        if (!btn) { return }
-        btn.off('click' + namespace);
-        btn.on('click' + namespace, function() {
-          height = container.querySelector(selectors.moduleInner).offsetHeight;
-          setTransitionHeight(container, height, isOpen, isAutoHeight);
-        });
-      }
     }
   
     function setTransitionHeight(container, height, isOpen, isAutoHeight) {
@@ -2856,6 +2840,10 @@ theme.recentlyViewed = {
           errors.remove();
         }
   
+        if (theme.settings.cartType === 'page') {
+          window.location = theme.routes.cartPage;
+        }
+  
         this.form.dispatchEvent(new CustomEvent('ajaxProduct:added', {
           detail: {
             product: product,
@@ -3480,8 +3468,7 @@ theme.recentlyViewed = {
   
   theme.VariantAvailability = (function() {
     var classes = {
-      disabled: 'disabled',
-      invalid: 'invalid'
+      disabled: 'disabled'
     };
   
     function availability(args) {
@@ -3516,7 +3503,7 @@ theme.recentlyViewed = {
   
             if (typeof entry === 'undefined') {
               // If option has yet to be added to the options tree, add it
-              entry = {value: variant[index], soldOut: true, exists: false}
+              entry = {value: variant[index], soldOut: true}
               options[index].push(entry);
             }
   
@@ -3526,13 +3513,11 @@ theme.recentlyViewed = {
             switch (index) {
               case 'option1':
                 // Option1 inputs should always remain enabled based on all available variants
-                  entry.exists = true;
                 entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
                 break;
               case 'option2':
                 // Option2 inputs should remain enabled based on available variants that match first option group
                 if (currentOption1 && variant['option1'] === currentOption1.value) {
-                  entry.exists = entry.exists || variant.available !== undefined;
                   entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
                 }
               case 'option3':
@@ -3541,7 +3526,6 @@ theme.recentlyViewed = {
                   currentOption1 && variant['option1'] === currentOption1.value
                   && currentOption2 && variant['option2'] === currentOption2.value
                 ) {
-                  entry.exists = entry.exists && variant.available !== undefined;
                   entry.soldOut = entry.soldOut && variant.available ? false : entry.soldOut;
                 }
             }
@@ -3603,23 +3587,15 @@ theme.recentlyViewed = {
           var buttonGroup = group.querySelector('.variant-input[data-value="'+ value +'"]');
           var input = buttonGroup.querySelector('input');
           var label = buttonGroup.querySelector('label');
-          input.removeAttribute('disabled');
-
+  
           // Variant exists - enable & show variant
           input.classList.remove(classes.disabled);
           label.classList.remove(classes.disabled);
-
   
           // Variant sold out - cross out option (remains selectable)
           if (obj.soldOut) {
             input.classList.add(classes.disabled);
             label.classList.add(classes.disabled);
-          }
-          input.classList.toggle(classes.invalid, !obj.exists);
-          label.classList.toggle(classes.invalid, !obj.exists);
-
-          if (!obj.exists) {
-            input.setAttribute('disabled', 'disabled');
           }
         }
       },
@@ -4152,6 +4128,7 @@ theme.recentlyViewed = {
       this.emailInput = this.querySelector(`#Recipient-email-${ this.dataset.sectionId }`);
       this.nameInput = this.querySelector(`#Recipient-name-${ this.dataset.sectionId }`);
       this.messageInput = this.querySelector(`#Recipient-message-${ this.dataset.sectionId }`);
+      this.dateInput = this.querySelector(`#Recipient-send-on-${ this.dataset.sectionId }`);
       this.addEventListener('change', () => this.onChange());
       this.recipientFields = this.querySelector('.recipient-fields');
   
@@ -5745,10 +5722,9 @@ theme.recentlyViewed = {
       updateContent: function(variantId) {
         var variantSectionUrl =
           this.baseUrl +
-            (this.baseUrl.endsWith('/') ? '' : '/') +
-            'variants/' +
-            variantId +
-            '/?section_id=store-availability';
+          '/variants/' +
+          variantId +
+          '/?section_id=store-availability';
   
         var self = this;
   
@@ -5933,6 +5909,10 @@ theme.recentlyViewed = {
         this.hoursPlaceholder.innerHTML = intervals.hours;
         this.minutesPlaceholder.innerHTML = intervals.minutes;
         this.secondsPlaceholder.innerHTML = intervals.seconds;
+  
+        setTimeout(() => {
+          this.display.classList.add('countdown__display--loaded');
+        }, 1);
       } else {
         if (this.completeMessage && this.messagePlaceholder) {
           this.messagePlaceholder.classList.add('countdown__timer-message--visible');
@@ -6774,6 +6754,28 @@ theme.recentlyViewed = {
             window.location.href = summaryLink;
           });
   
+          // if detail has :focus-within
+          detail.addEventListener('focusin', () => {
+            if (!detail.hasAttribute('open')) {
+  
+              // close all other details
+              detailsEl.forEach((detail) => {
+                detail.removeAttribute('open');
+                detail.setAttribute('aria-expanded', 'false');
+              });
+  
+              detail.setAttribute('open', '');
+              detail.setAttribute('aria-expanded', 'true');
+            }
+          });
+  
+          detail.addEventListener('focusout', () => {
+            if (detail.hasAttribute('open') && !detail.matches(':focus-within')) {
+              detail.removeAttribute('open');
+              detail.setAttribute('aria-expanded', 'false');
+            }
+          });
+  
           detail.addEventListener('mouseover', () => {
             if (!detail.hasAttribute('open')) {
               detail.setAttribute('open', '');
@@ -7003,8 +7005,6 @@ theme.recentlyViewed = {
         this.initImageZoom();
         this.initModelViewerLibraries();
         this.initShopifyXrLaunch();
-  
-        if (window.SPR) {SPR.initDomEls();SPR.loadBadges()}
       },
   
       setImageSizes: function() {
@@ -7144,9 +7144,7 @@ theme.recentlyViewed = {
       },
   
       initAjaxProductForm: function() {
-        if (theme.settings.cartType === 'drawer') {
-          new theme.AjaxProduct(this.cache.form);
-        }
+        new theme.AjaxProduct(this.cache.form);
       },
   
       /*============================================================================
@@ -7270,34 +7268,10 @@ theme.recentlyViewed = {
   
         this.initProductSlider(variant);
       },
-
-      /**
-       * CHUMS: update images for all variants to have the current image set
-       *    This turns all items with a data-no-group and data-media-id attributes
-       *    into the current selected group set, so they will show on the product
-       *    carousel
-       * @author Chums/Steve
-       * @param {string} set
-       */
-      updateImageSetAllVariants: function(set) {
-        this.cache.thumbSlider.querySelectorAll('.product__thumb-item').forEach(thumb => {
-          if (thumb.dataset.noGroup && thumb.dataset.mediaId) {
-            const el = this.cache.mainSlider.querySelector(`[data-media-id="${thumb.dataset.mediaId}"]`);
-            if (el) {
-              el.dataset.group = set;
-              thumb.dataset.group = set;
-            }
-          }
-        });
-      },
   
       // Show/hide thumbnails based on current image set
       updateImageSetThumbs: function(set) {
-        this.updateImageSetAllVariants(set);
         this.cache.thumbSlider.querySelectorAll('.product__thumb-item').forEach(thumb => {
-          if (thumb.dataset.noGroup && thumb.dataset.mediaId) {
-
-          }
           thumb.classList.toggle(classes.hidden, thumb.dataset.group !== set);
         });
       },
@@ -7322,10 +7296,24 @@ theme.recentlyViewed = {
       updateInventory: function(evt) {
         var variant = evt.detail.variant;
   
-        // Hide stock if no inventory management or policy is continue
-        if (!variant || !variant.inventory_management || variant.inventory_policy === 'continue') {
-          this.toggleInventoryQuantity(false);
-          this.toggleIncomingInventory(true, false);
+        // Override to display in stock message for sold out variants with policy set to continue
+        // Must be set to true in order to display in stock message for sold out variants
+        const inStockForOOSAndContinueSelling = false;
+  
+        if (!variant) {
+          // Variant is unavailable
+          // So we want to hide both the inventory quantity + incoming transfer notice
+          this.toggleInventoryQuantity('hidden', false);
+          this.toggleIncomingInventory(false);
+          return;
+        }
+  
+        // Inventory management is nil
+        // So we want to hide the low inventory message but show an In stock status
+        // And hide the incoming transfer notice
+        if (!variant.inventory_management) {
+          this.toggleInventoryQuantity('visible', false);
+          this.toggleIncomingInventory(false);
           return;
         }
   
@@ -7334,10 +7322,18 @@ theme.recentlyViewed = {
   
           const { quantity, policy, incoming, next_incoming_date } = variantInventoryObject || {};
   
-          this.toggleInventoryQuantity(quantity);
+          this.toggleInventoryQuantity(undefined, quantity);
+  
+          if (inStockForOOSAndContinueSelling) {
+            if (quantity <= 0 && policy === 'continue') {
+              this.toggleInventoryQuantity('visible', false);
+              this.toggleIncomingInventory(false);
+              return;
+            }
+          }
   
           if ((incoming && !variant.available) || (quantity <= 0 && policy === 'continue')) {
-            this.toggleIncomingInventory(true, next_incoming_date);
+            this.toggleIncomingInventory(true, next_incoming_date, policy);
           } else {
             this.toggleIncomingInventory(false);
           }
@@ -7353,10 +7349,19 @@ theme.recentlyViewed = {
         this.storeAvailability.updateContent(variant.id);
       },
   
-      toggleInventoryQuantity: function(quantity) {
-  
+      toggleInventoryQuantity: function(state = undefined, quantity) {
         const productInventoryEl = this.container.querySelector(this.selectors.inventory);
         const inventorySalesPoint = productInventoryEl.closest('.sales-point');
+  
+        if (state && state === 'hidden') {
+          // variant is unavailable
+          // hide and return
+          if (inventorySalesPoint) {
+            inventorySalesPoint.classList.add(classes.hidden);
+          }
+  
+          return;
+        }
   
         let showLowInventoryMessage = false;
   
@@ -7365,7 +7370,7 @@ theme.recentlyViewed = {
           showLowInventoryMessage = true;
         }
   
-        if (parseInt(quantity) > 0) {
+        if (parseInt(quantity) > 0 || (state && state === 'visible')) {
           if (showLowInventoryMessage) {
             productInventoryEl.parentNode.classList.add(classes.lowInventory);
             if (quantity > 1) {
@@ -7389,9 +7394,10 @@ theme.recentlyViewed = {
         }
       },
   
-      toggleIncomingInventory: function(showIncomingInventory, incomingInventoryDate) {
+      toggleIncomingInventory: function(showIncomingInventory, incomingInventoryDate, policy) {
   
         const incomingInventoryEl = this.container.querySelector(this.selectors.incomingInventory);
+        const incomingInventoryIcon = incomingInventoryEl.querySelector('.icon-and-text');
   
         if (!incomingInventoryEl) return;
   
@@ -7412,6 +7418,16 @@ theme.recentlyViewed = {
             textEl.textContent = theme.strings.waitingForStock;
             incomingInventoryEl.classList.remove(classes.hidden);
           }
+  
+          // When OOS and incoming inventory and continue selling disabled, update icon to low inventory
+          if (incomingInventoryIcon) {
+            if (policy !== 'continue') {
+              incomingInventoryIcon.classList.add(classes.lowInventory);
+            } else {
+              incomingInventoryIcon.classList.remove(classes.lowInventory);
+            }
+          }
+  
         } else {
           incomingInventoryEl.classList.add(classes.hidden);
         }
@@ -8242,9 +8258,6 @@ theme.recentlyViewed = {
     if (!document.documentElement.classList.contains('modal-open')) {
       theme.initQuickShop();
     }
-
-    // Refresh reviews app
-    if (window.SPR) {SPR.initDomEls();SPR.loadBadges()}
 
     // Re-hook up collapsible box triggers
     theme.collapsibles.init();
