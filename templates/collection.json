@@ -45,6 +45,7 @@
         "collapsed": true,
         "filter_style": "sidebar",
         "enable_color_swatches": false,
+        "enable_swatch_labels": true,
         "enable_sort": true
       }
     }

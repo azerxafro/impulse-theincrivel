@@ -45,6 +45,7 @@
     "button_style": "square",
     "icon_weight": "4px",
     "icon_linecaps": "miter",
+    "quick_shop_enable": false,
     "quick_shop_text": "Quick view",
     "product_grid_image_size": "square",
     "product_hover_image": false,
@@ -59,13 +60,14 @@
     "collection_grid_opacity": 20,
     "collection_grid_gutter": true,
     "cart_type": "drawer",
+    "cart_icon": "cart",
     "cart_notes_enable": false,
     "cart_terms_conditions_enable": false,
     "social_facebook_link": "https:\/\/www.facebook.com\/Chumsusa",
     "social_twitter_link": "https:\/\/twitter.com\/ChumsUSA",
     "social_instagram_link": "https:\/\/www.instagram.com\/chumsusa",
     "social_youtube_link": "https:\/\/www.youtube.com\/user\/ChumsInc",
-    "show_breadcrumbs": false,
+    "show_breadcrumbs": true,
     "show_breadcrumbs_collection_link": false,
     "breadcrumb": false,
     "checkout_accent_color": "#111111",
@@ -391,8 +393,7 @@
             "footer-promotions-2"
           ],
           "settings": {
-            "hide_homepage": false,
-            "image_size": "wide"
+            "hide_homepage": false
           }
         }
       }

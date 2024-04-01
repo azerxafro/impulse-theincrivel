@@ -1425,6 +1425,9 @@
           "label": "Color-Swatches aktivieren",
           "info": "[Einrichtungsanleitung anzeigen](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
         },
+        "enable_swatch_labels": {
+          "label": "Musteretiketten anzeigen"
+        },
         "enable_sort": {
           "label": "Sortieroptionen anzeigen"
         }
@@ -1582,6 +1585,9 @@
         "enable_color_swatches": {
           "label": "Color-Swatches aktivieren",
           "info": "[Einrichtungsanleitung anzeigen](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
+        },
+        "enable_swatch_labels": {
+          "label": "Musteretiketten anzeigen"
         },
         "per_row": {
           "label": "Produkte pro Zeile"
@@ -4217,6 +4223,9 @@
         }
       }
     },
+    "enable_swatch_labels": {
+      "label": "Musteretiketten anzeigen"
+    },
     "lazyload_images": {
       "label": "Bilder faul laden",
       "info": "Lazy Loading sollte aktiviert werden, wenn sich Abschnittsbilder unterhalb der Falte befinden. [Mehr erfahren](https:\/\/archetypethemes.co\/blogs\/support\/what-is-lazyloading)"
@@ -4430,7 +4439,7 @@
     "gift_card": {
       "show_gift_card_recipient": {
         "label": "Formular für Empfängerinformationen für Geschenkgutscheinprodukte anzeigen",
-        "info": "Geschenkkartenprodukte können optional mit einer persönlichen Nachricht an einem bestimmten Datum direkt an einen Empfänger gesendet werden.[Mehr erfahren](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+        "info": "Geschenkkartenprodukte können optional mit einer persönlichen Nachricht direkt an den Empfänger versendet werden.[Mehr erfahren](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
       }
     },
     "follow_on_shop": {

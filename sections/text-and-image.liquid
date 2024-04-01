@@ -15,10 +15,10 @@
 
 {% style %}
   {% if section.settings.top_padding == false %}
-    .index-section { margin-top: 0 !important; }
+    #shopify-section-{{ section.id }} .index-section { margin-top: 0 !important; }
   {% endif %}
   {% if section.settings.bottom_padding == false %}
-    .index-section { margin-bottom: 0 !important; }
+    #shopify-section-{{ section.id }} .index-section { margin-bottom: 0 !important; }
   {% endif %}
 {% endstyle %}
 

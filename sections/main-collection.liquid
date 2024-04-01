@@ -20,7 +20,8 @@
             enable_sidebar: section.settings.enable_sidebar,
             filter_style: section.settings.filter_style,
             collapsed: section.settings.collapsed,
-            enable_color_swatches: section.settings.enable_color_swatches
+            enable_color_swatches: section.settings.enable_color_swatches,
+            enable_swatch_labels: section.settings.enable_swatch_labels
           -%}
         </div>
         <div class="grid__item medium-up--four-fifths grid__item--content">
@@ -147,6 +148,12 @@
       "id": "enable_color_swatches",
       "label": "t:sections.main-collection.settings.enable_color_swatches.label",
       "info": "t:sections.main-collection.settings.enable_color_swatches.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_swatch_labels",
+      "label": "t:common.enable_swatch_labels.label",
+      "default": true
     },
     {
       "type": "checkbox",

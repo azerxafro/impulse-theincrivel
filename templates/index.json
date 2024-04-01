@@ -36,26 +36,30 @@
         "lazyload_images": true
       }
     },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "New 2024 Styles",
+        "home_featured_products": "2024-products",
+        "per_row": 5,
+        "rows": 1,
+        "mobile_scrollable": true,
+        "view_all": false,
+        "divider": false
+      }
+    },
     "rich-text": {
       "type": "rich-text",
       "blocks": {
         "heading": {
           "type": "heading",
           "settings": {
-            "title": "Rich text"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": true,
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<\/p>"
+            "title": "Since 1983 Chums has been about the Guides, Dirtbags, River Rats and Weekend Warriors."
           }
         }
       },
       "block_order": [
-        "heading",
-        "text"
+        "heading"
       ],
       "settings": {
         "align_text": "center",
@@ -69,21 +73,22 @@
         "promo-0": {
           "type": "advanced",
           "settings": {
-            "subheading": "Limited time",
-            "heading": "Announce your promotion",
-            "textarea": "Include the smaller details of your promotion in text below the title.",
-            "cta_text1": "Shop This",
-            "cta_link1": "shopify:\/\/collections\/all",
-            "cta_text2": "Shop All",
+            "subheading": "New Product Drop",
+            "heading": "The Ripcord Retainer",
+            "textarea": "Our most advanced rope retainer ever featuring interchangeable ends",
+            "cta_text1": "Shop Now",
+            "cta_link1": "shopify:\/\/products\/ripcord-retainer",
+            "cta_text2": "",
             "cta_link2": "",
+            "image": "shopify:\/\/shop_images\/ripcord_lifestyle-2.jpg",
             "video_url": "",
             "width": "50",
             "height": 800,
             "text_size": 100,
             "text_align": "vertical-center horizontal-center",
-            "color_accent": "rgba(0,0,0,0)",
+            "color_accent": "#cf0a2c",
             "boxed": false,
-            "framed": true
+            "framed": false
           }
         },
         "promo-1": {
@@ -102,7 +107,7 @@
             "text_size": 100,
             "text_align": "vertical-bottom horizontal-center",
             "color_accent": "rgba(0,0,0,0)",
-            "boxed": true,
+            "boxed": false,
             "framed": false
           }
         }
@@ -233,38 +238,48 @@
         "lazyload_images": true
       }
     },
-    "featured-collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "Featured collection",
-        "home_featured_products": "",
-        "per_row": 4,
-        "rows": 1,
-        "mobile_scrollable": true,
-        "view_all": true,
-        "divider": false
-      }
-    },
     "background-image-text": {
       "type": "background-image-text",
       "settings": {
-        "subtitle": "Impressive",
-        "title": "Large image with text box",
-        "text": "<p>Pair large text with a full-width image to draw attention to an important detail of your brand or product line.<\/p>",
+        "subtitle": "",
+        "title": "",
+        "text": "",
         "button_label": "",
         "button_link": "shopify:\/\/collections\/all",
+        "image": "shopify:\/\/shop_images\/SurfshortsWebArt.jpg",
         "layout": "left",
-        "height": 750,
+        "height": 550,
         "framed": false,
-        "parallax": true,
+        "parallax": false,
         "parallax_direction": "top",
         "lazyload_images": true
+      }
+    },
+    "1710957541a9b8e659": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_FRkLzt": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_FRkLzt"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
       }
     },
     "blog-posts": {
       "type": "blog-posts",
       "settings": {
-        "title": "From the journal",
+        "title": "The Eddy Line Blog",
         "blog": "news",
         "post_limit": 3,
         "blog_show_tags": false,
@@ -275,28 +290,17 @@
         "blog_image_size": "wide",
         "divider": false
       }
-    },
-    "map": {
-      "type": "map",
-      "settings": {
-        "map_title": "Our retail store",
-        "address": "<p>301 Front St W<br>Toronto, Canada<\/p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm<\/p>",
-        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
-        "api_key": "",
-        "show_button": true,
-        "lazyload_images": true
-      }
     }
   },
   "order": [
     "slideshow",
+    "featured-collection",
     "rich-text",
     "promo-grid",
     "featured-collections",
     "promo-grid2",
-    "featured-collection",
     "background-image-text",
-    "blog-posts",
-    "map"
+    "1710957541a9b8e659",
+    "blog-posts"
   ]
 }

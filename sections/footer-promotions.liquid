@@ -2,7 +2,7 @@
   assign show_section = true
   if template == 'index' and section.settings.hide_homepage
     assign show_section = false
-  endif
+  endif -%
 -%}
 
 {%- if show_section -%}

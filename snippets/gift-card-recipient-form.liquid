@@ -93,6 +93,26 @@
         <span>{{ max_chars_message_rendered }}</span>
       </label>
     </div>
+
+    <div class="field">
+      <input
+        class="field__input text-body input-full"
+        autocomplete="send_on"
+        type="date"
+        id="Recipient-send-on-{{ section.id }}"
+        name="properties[Send on]"
+        placeholder="{{ 'recipient.form.send_on_label' | t }}"
+        pattern="\d{4}-\d{2}-\d{2}"
+        value="{{ form.send_on }}"
+        {% if form.errors contains 'send_on' %}
+          aria-invalid="true"
+          aria-describedby="RecipientForm-send_on-error-{{ section.id }}"
+        {% endif %}
+      >
+      <label class="form__label field__label" for="Recipient-send-on-{{ section.id }}">
+        {{ 'recipient.form.send_on_label' | t }}
+      </label>
+    </div>
   </div>
   <input
     type="hidden"

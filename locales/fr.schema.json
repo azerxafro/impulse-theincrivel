@@ -1425,6 +1425,9 @@
           "label": "Activer les échantillons de couleur",
           "info": "[Consultez les instructions de configuration](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
         },
+        "enable_swatch_labels": {
+          "label": "Afficher les étiquettes des échantillons"
+        },
         "enable_sort": {
           "label": "Afficher les options de tri"
         }
@@ -1582,6 +1585,9 @@
         "enable_color_swatches": {
           "label": "Activer les échantillons de couleur",
           "info": "[Consultez les instructions de configuration](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
+        },
+        "enable_swatch_labels": {
+          "label": "Afficher les étiquettes des échantillons"
         },
         "per_row": {
           "label": "Produits par ligne"
@@ -4211,6 +4217,9 @@
         }
       }
     },
+    "enable_swatch_labels": {
+      "label": "Afficher les étiquettes des échantillons"
+    },
     "lazyload_images": {
       "label": "Images de chargement paresseux",
       "info": "Le chargement différé doit être activé lorsque les images de section sont sous le pli. [En savoir plus](https:\/\/archetypethemes.co\/blogs\/support\/what-is-lazyloading)"
@@ -4424,7 +4433,7 @@
     "gift_card": {
       "show_gift_card_recipient": {
         "label": "Afficher le formulaire d’information sur le destinataire pour les cartes‑cadeaux en tant que produit",
-        "info": "Les cartes‑cadeaux en tant que produits peuvent être envoyées directement au destinataire à une date programmée, accompagnées d’un message personnel. [En savoir plus](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+        "info": "Les cartes-cadeaux en tant que produits peuvent être envoyées directement au destinataire avec un message personnel. [En savoir plus](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
       }
     },
     "follow_on_shop": {

@@ -1425,6 +1425,9 @@
           "label": "Abilita i campioni di colore",
           "info": "[Visualizza le istruzioni di configurazione](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
         },
+        "enable_swatch_labels": {
+          "label": "Mostra le etichette dei campioni"
+        },
         "enable_sort": {
           "label": "Mostra le opzioni di ordinamento"
         }
@@ -1582,6 +1585,9 @@
         "enable_color_swatches": {
           "label": "Abilita i campioni di colore",
           "info": "[Visualizza le istruzioni di configurazione](https:\/\/archetypethemes.co\/blogs\/impulse\/how-do-i-set-up-color-swatches)"
+        },
+        "enable_swatch_labels": {
+          "label": "Mostra le etichette dei campioni"
         },
         "per_row": {
           "label": "Prodotti per riga"
@@ -4217,6 +4223,9 @@
         }
       }
     },
+    "enable_swatch_labels": {
+      "label": "Mostra le etichette dei campioni"
+    },
     "lazyload_images": {
       "label": "Caricamento pigro delle immagini",
       "info": "Il caricamento lento dovrebbe essere abilitato quando le immagini della sezione sono below the fold. [Per saperne di più](https:\/\/archetypethemes.co\/blogs\/support\/what-is-lazyloading)"
@@ -4430,7 +4439,7 @@
     "gift_card": {
       "show_gift_card_recipient": {
         "label": "Mostra il modulo informazioni del destinatario per i buoni regalo",
-        "info": "I buoni regalo possono essere inviati direttamente al destinatario in una data stabilita e con un messaggio personale. [Maggiori informazioni](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
+        "info": "I buoni regalo possono essere inviati direttamente al destinatario con un messaggio personale. [Maggiori informazioni](https:\/\/help.shopify.com\/manual\/online-store\/themes\/customizing-themes\/add-gift-card-recipient-fields)"
       }
     },
     "follow_on_shop": {
