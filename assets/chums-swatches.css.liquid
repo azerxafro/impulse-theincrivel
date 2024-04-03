@@ -1,434 +1,510 @@
-/**
- * @author CHUMS/Steve,
- * @updated 2023-11-09
- */
-.variant-input-wrap input:disabled.invalid {
-    display: none;
-}
-.variant-input-wrap input:disabled.invalid + label.color-swatch {
-    display: none;
-}
+.color-swatch.color-swatch--100 {background-color: #000000;}
+.color-swatch.color-swatch--leather-100 {background-image: url({{'swatch-leather-100.jpg' | file_img_url}});}
+.color-swatch.color-swatch--suede-100 {background-color: #000000;}
+.color-swatch.color-swatch--101 {background-color: #2d348d;}
+.color-swatch.color-swatch--tech-101 {background-color: #99becc;}
+.color-swatch.color-swatch--102 {background-color: #c02119;}
+.color-swatch.color-swatch--103 {background-color: #818285;}
+.color-swatch.color-swatch--105 {background-color: #181a44;}
+.color-swatch.color-swatch--silicone-105 {background-color: #536ca7;}
+.color-swatch.color-swatch--107 {background-color: #eeeeee;}
+.color-swatch.color-swatch--108 {background-color: #ffdf28;}
+.color-swatch.color-swatch--109 {background-color: #754f9f;}
+.color-swatch.color-swatch--111 {background-color: #2cb156;}
+.color-swatch.color-swatch--113 {background-color: #dcc7b3;}
+.color-swatch.color-swatch--ss-113 {background-image: url({{'swatch-ss-113.jpg' | file_img_url}});}
+.color-swatch.color-swatch--114 {background-color: #00475D;}
+.color-swatch.color-swatch--116 {background-color: #895a4e;}
+.color-swatch.color-swatch--new-116 {background-image: url({{'swatch-new-116.png' | file_img_url}});}
+.color-swatch.color-swatch--117 {background-color: #e0663b;}
+.color-swatch.color-swatch--118 {background-image: url({{'swatch-leather-118.jpg' | file_img_url}});}
+.color-swatch.color-swatch--leather-118 {background-image: url({{'swatch-leather-118.jpg' | file_img_url}});}
+.color-swatch.color-swatch--suede-118 {background-image: url({{'swatch-suede-118.jpg' | file_img_url}});}
+.color-swatch.color-swatch--119 {background-image: url({{'swatch-leather-119.jpg' | file_img_url}});}
+.color-swatch.color-swatch--leather-119 {background-image: url({{'swatch-leather-119.jpg' | file_img_url}});}
+.color-swatch.color-swatch--121 {background-color: #741e35;}
+.color-swatch.color-swatch--122 {background-color: #57553c;}
+.color-swatch.color-swatch--124 {background-image: url({{'swatch-124.png' | file_img_url}});}
+.color-swatch.color-swatch--new-124 {background-image: url({{'swatch-new-124.png' | file_img_url}});}
+.color-swatch.color-swatch--126 {background-image: url({{'swatch-126.jpg' | file_img_url}});}
+.color-swatch.color-swatch--127 {background-color: #083d74;}
+.color-swatch.color-swatch--131 {background-color: #093d18;}
+.color-swatch.color-swatch--132 {background-color: #bfd333;}
+.color-swatch.color-swatch--133 {background-color: #93c75f;}
+.color-swatch.color-swatch--134 {background-color: #58beb9;}
+.color-swatch.color-swatch--137 {background-color: #391f59;}
+.color-swatch.color-swatch--139 {background-color: #dddcdb;}
+.color-swatch.color-swatch--140 {background-color: #9f3b95;}
+.color-swatch.color-swatch--141 {background-color: #e36e66;}
+.color-swatch.color-swatch--144 {background-color: #ac2400;}
+.color-swatch.color-swatch--146 {background-color: #4a4d3b;}
+.color-swatch.color-swatch--149 {background-color: #865688;}
 
-.variant__input--color-swatch + label.color-swatch {
-    background-color: var(--background-color, transparent);
-    background-image: var(--background-image, unset);
-}
+.color-swatch.color-swatch--151 {background-color: #C9B037;}
+.color-swatch.color-swatch--152 {background-color: #e1e1e1;}
+.color-swatch.color-swatch--153 {background-color: #a7c1a3;}
+.color-swatch.color-swatch--155 {background-color: #ceada6;}
+.color-swatch.color-swatch--silicone-155 {background-color: #a6563d;}
+.color-swatch.color-swatch--156 {background-image: url({{'swatch-ratchet-156.jpg' | file_img_url}});}
+.color-swatch.color-swatch--157 {background-image: url({{'swatch-ratchet-157.jpg' | file_img_url}});}
+.color-swatch.color-swatch--159 {background-image: url({{'swatch-159.jpg' | file_img_url}});}
+.color-swatch.color-swatch--160 {background-image: url({{'swatch-ratchet-160.jpg' | file_img_url}});}
+.color-swatch.color-swatch--168 {background-image: url({{'swatch-168.jpg' | file_img_url}});}
+.color-swatch.color-swatch--170 {background-image: url({{'swatch-170.jpg' | file_img_url}});}
+.color-swatch.color-swatch--silicone-170 {background-color: #e7e4bc;}
+.color-swatch.color-swatch--185 {background-image: url({{'swatch-185.jpg' | file_img_url}});}
+.color-swatch.color-swatch--186 {background-image: url({{'swatch-186.jpg' | file_img_url}});}
+.color-swatch.color-swatch--187 {background-image: url({{'swatch-187.jpg' | file_img_url}});}
+.color-swatch.color-swatch--188 {background-image: url({{'swatch-188.jpg' | file_img_url}});}
+.color-swatch.color-swatch--189 {background-image: url({{'swatch-189.jpg' | file_img_url}});}
+.color-swatch.color-swatch--190 {background-image: url({{'swatch-190.jpg' | file_img_url}});}
+.color-swatch.color-swatch--199 {background-image: url({{'swatch-199.jpg' | file_img_url}});}
 
-.color-swatch.color-swatch--100 {
-    --background-color: #000;
-}
-.color-swatch.color-swatch--leather-100 {--background-image: url({{'swatch-leather-100.jpg' | file_img_url}});}
-.color-swatch.color-swatch--suede-100 {--background-color: #000000;}
-.color-swatch.color-swatch--101 {--background-color: #276bb8;}
-.color-swatch.color-swatch--tech-101 {--background-color: #99becc;}
-.color-swatch.color-swatch--102 {--background-color: #c02119;}
-.color-swatch.color-swatch--103 {--background-color: #92999f;}
-.color-swatch.color-swatch--105 {--background-color: #181a44;}
-.color-swatch.color-swatch--silicone-105 {--background-color: #536ca7;}
-.color-swatch.color-swatch--107 {--background-color: #eeeeee;}
-.color-swatch.color-swatch--108 {--background-color: #ffdf28;}
-.color-swatch.color-swatch--109 {--background-color: #754f9f;}
-.color-swatch.color-swatch--111 {--background-color: #2cb156;}
-.color-swatch.color-swatch--113 {--background-color: #dcc7b3;}
-.color-swatch.color-swatch--ss-113 {--background-image: url({{'swatch-ss-113.jpg' | file_img_url}});}
-.color-swatch.color-swatch--114 {--background-color: #00475D;}
-.color-swatch.color-swatch--116 {--background-color: #895a4e;}
-.color-swatch.color-swatch--new-116 {--background-image: url({{'swatch-new-116.png' | file_img_url}});}
-.color-swatch.color-swatch--117 {--background-color: #e0663b;}
-.color-swatch.color-swatch--118 {--background-image: url({{'swatch-leather-118.jpg' | file_img_url}});}
-.color-swatch.color-swatch--leather-118 {--background-image: url({{'swatch-leather-118.jpg' | file_img_url}});}
-.color-swatch.color-swatch--suede-118 {--background-image: url({{'swatch-suede-118.jpg' | file_img_url}});}
-.color-swatch.color-swatch--119 {--background-image: url({{'swatch-leather-119.jpg' | file_img_url}});}
-.color-swatch.color-swatch--leather-119 {--background-image: url({{'swatch-leather-119.jpg' | file_img_url}});}
-.color-swatch.color-swatch--121 {--background-color: #5d202b;}
-.color-swatch.color-swatch--122 {--background-color: #57553c;}
-.color-swatch.color-swatch--124 {--background-image: url({{'swatch-124.png' | file_img_url}});}
-.color-swatch.color-swatch--new-124 {--background-image: url({{'swatch-new-124.png' | file_img_url}});}
-.color-swatch.color-swatch--126 {--background-image: url({{'swatch-126.jpg' | file_img_url}});}
-.color-swatch.color-swatch--127 {--background-color: #083d74;}
-.color-swatch.color-swatch--131 {--background-color: #093d18;}
-.color-swatch.color-swatch--132 {--background-color: #bfd333;}
-.color-swatch.color-swatch--133 {--background-color: #93c75f;}
-.color-swatch.color-swatch--134 {--background-color: #58beb9;}
-.color-swatch.color-swatch--139 {--background-color: #dddcdb;}
-.color-swatch.color-swatch--140 {--background-color: #9f3b95;}
-.color-swatch.color-swatch--141 {--background-color: #e36e66;}
-.color-swatch.color-swatch--144 {--background-color: #ac2400;}
-.color-swatch.color-swatch--146 {--background-color: #4a4d3b;}
-.color-swatch.color-swatch--149 {--background-color: #865688;}
-
-.color-swatch.color-swatch--151 {--background-color: #C9B037;}
-.color-swatch.color-swatch--152 {--background-color: #e1e1e1;}
-.color-swatch.color-swatch--153 {--background-color: #a7c1a3;}
-.color-swatch.color-swatch--155 {--background-color: #ceada6;}
-.color-swatch.color-swatch--silicone-155 {--background-color: #a6563d;}
-.color-swatch.color-swatch--156 {--background-image: url({{'swatch-ratchet-156.jpg' | file_img_url}});}
-.color-swatch.color-swatch--157 {--background-image: url({{'swatch-ratchet-157.jpg' | file_img_url}});}
-.color-swatch.color-swatch--159 {--background-image: url({{'swatch-159.jpg' | file_img_url}});}
-.color-swatch.color-swatch--160 {--background-image: url({{'swatch-ratchet-160.jpg' | file_img_url}});}
-.color-swatch.color-swatch--168 {--background-image: url({{'swatch-168.jpg' | file_img_url}});}
-.color-swatch.color-swatch--170 {--background-image: url({{'swatch-170.jpg' | file_img_url}});}
-.color-swatch.color-swatch--silicone-170 {--background-color: #e7e4bc;}
-.color-swatch.color-swatch--185 {--background-image: url({{'swatch-185.jpg' | file_img_url}});}
-.color-swatch.color-swatch--186 {--background-image: url({{'swatch-186.jpg' | file_img_url}});}
-.color-swatch.color-swatch--187 {--background-image: url({{'swatch-187.jpg' | file_img_url}});}
-.color-swatch.color-swatch--188 {--background-image: url({{'swatch-188.jpg' | file_img_url}});}
-.color-swatch.color-swatch--189 {--background-image: url({{'swatch-189.jpg' | file_img_url}});}
-.color-swatch.color-swatch--190 {--background-image: url({{'swatch-190.jpg' | file_img_url}});}
-.color-swatch.color-swatch--199 {--background-image: url({{'swatch-199.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--204 {--background-image: url({{'swatch-204.png' | file_img_url}});}
-.color-swatch.color-swatch--217 {--background-color: #8c2f30;}
-.color-swatch.color-swatch--218 {--background-color: #c9e079;}
-.color-swatch.color-swatch--219 {--background-color: #cff471;}
-.color-swatch.color-swatch--223 {--background-color: #85a8cb;}
-.color-swatch.color-swatch--225 {--background-image: url({{'swatch-225.png' | file_img_url}});}
-.color-swatch.color-swatch--226 {--background-image: url({{'swatch-226.png' | file_img_url}});}
-.color-swatch.color-swatch--227 {--background-image: url({{'swatch-227.png' | file_img_url}});}
-.color-swatch.color-swatch--228 {--background-image: url({{'swatch-228.png' | file_img_url}});}
-.color-swatch.color-swatch--229 {--background-image: url({{'swatch-229.png' | file_img_url}});}
-.color-swatch.color-swatch--249 {--background-image: url({{'swatch-249.jpg' | file_img_url}});}
-.color-swatch.color-swatch--250 {--background-color: #00a3e0;}
-.color-swatch.color-swatch--silicone-250 {--background-color: #7bc5a4;}
-.color-swatch.color-swatch--257 {--background-image: url({{'swatch-257.png' | file_img_url}});}
-.color-swatch.color-swatch--264 {--background-color: #ebc121;}
-.color-swatch.color-swatch--290 {--background-image: url({{'swatch-290.png' | file_img_url}});}
-
-.color-swatch.color-swatch--300 {--background-image: url({{'swatch-300.png' | file_img_url}});}
-.color-swatch.color-swatch--new-300 {--background-image: url({{'swatch-new-300.png' | file_img_url}});}
-.color-swatch.color-swatch--306 {--background-image: url({{'swatch-306.jpg' | file_img_url}});}
-.color-swatch.color-swatch--307 {--background-image: url({{'swatch-307.jpg' | file_img_url}});}
-.color-swatch.color-swatch--308 {--background-image: url({{'swatch-308.jpg' | file_img_url}});}
-.color-swatch.color-swatch--309 {--background-image: url({{'swatch-309.jpg' | file_img_url}});}
-.color-swatch.color-swatch--310 {--background-image: url({{'swatch-310.jpg' | file_img_url}});}
-.color-swatch.color-swatch--311 {--background-image: url({{'swatch-311.jpg' | file_img_url}});}
-.color-swatch.color-swatch--312 {--background-image: url({{'swatch-312.jpg' | file_img_url}});}
-.color-swatch.color-swatch--313 {--background-image: url({{'swatch-313.jpg' | file_img_url}});}
-.color-swatch.color-swatch--314 {--background-image: url({{'swatch-314.jpg' | file_img_url}});}
-.color-swatch.color-swatch--315 {--background-image: url({{'swatch-315.jpg' | file_img_url}});}
-.color-swatch.color-swatch--319 {--background-image: url({{'swatch-ratchet-319.jpg' | file_img_url}});}
-.color-swatch.color-swatch--320 {--background-image: url({{'swatch-rope-320.jpg' | file_img_url}});}
-.color-swatch.color-swatch--329 {--background-image: url({{'swatch-329.jpg' | file_img_url}});}
-.color-swatch.color-swatch--rope-329 {--background-image: url({{'swatch-rope-329.jpg' | file_img_url}});}
-.color-swatch.color-swatch--340 {--background-image: url({{'swatch-340.jpg' | file_img_url}});}
-.color-swatch.color-swatch--342 {--background-image: url({{'swatch-ratchet-342.jpg' | file_img_url}});}
-.color-swatch.color-swatch--349 {--background-image: url({{'swatch-349.jpg' | file_img_url}});}
-.color-swatch.color-swatch--350 {--background-image: url({{'swatch-rope-350.jpg' | file_img_url}});}
-.color-swatch.color-swatch--350 {--background-image: url({{'swatch-350.jpg' | file_img_url}});}
-.color-swatch.color-swatch--351 {--background-image: url({{'swatch-351.jpg' | file_img_url}});}
-.color-swatch.color-swatch--352 {--background-image: url({{'swatch-352.jpg' | file_img_url}});}
-.color-swatch.color-swatch--356 {--background-image: url({{'swatch-356.jpg' | file_img_url}});}
-
-
-
-.color-swatch.color-swatch--357 {--background-color: #a9a8a8;}
-.color-swatch.color-swatch--358 {--background-color: #faca3e;}
-.color-swatch.color-swatch--359 {--background-color: #efa43c;}
-.color-swatch.color-swatch--360 {--background-color: #485b38;}
-.color-swatch.color-swatch--361 {--background-color: #b3c9da;}
-.color-swatch.color-swatch--362 {--background-color: #575f68;}
-.color-swatch.color-swatch--363 {--background-color: #afb1b2;}
-.color-swatch.color-swatch--364 {--background-color: #c9baa3;}
-.color-swatch.color-swatch--365 {--background-color: #3e5487;}
-.color-swatch.color-swatch--367 {--background-color: #8e8b82;}
-.color-swatch.color-swatch--368 {--background-color: #712b2b;}
-.color-swatch.color-swatch--369 {--background-color: #dca448;}
-.color-swatch.color-swatch--370 {--background-color: #4aa6b0;}
-.color-swatch.color-swatch--374 {--background-image: url({{'swatch-374.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss-374 {--background-image: url({{'swatch-ss-374.jpg' | file_img_url}});}
-.color-swatch.color-swatch--390 {--background-color: #64534f;}
-.color-swatch.color-swatch--391 {--background-color: #4d5751;}
-
-.color-swatch.color-swatch--405 {--background-image: url({{'swatch-405.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-405 {--background-image: url({{'swatch-new-405.png' | file_img_url}});}
-.color-swatch.color-swatch--406 {--background-image: url({{'swatch-406.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-406 {--background-image: url({{'swatch-new-406.png' | file_img_url}});}
-.color-swatch.color-swatch--408 {--background-image: url({{'swatch-408.jpg' | file_img_url}});}
-.color-swatch.color-swatch--450 {--background-image: url({{'swatch-450.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-450 {--background-image: url({{'swatch-new-450.png' | file_img_url}});}
-.color-swatch.color-swatch--456 {--background-image: url({{'swatch-456.jpg' | file_img_url}});}
-.color-swatch.color-swatch--457 {--background-image: url({{'swatch-457.jpg' | file_img_url}});}
-.color-swatch.color-swatch--458 {--background-image: url({{'swatch-458.jpg' | file_img_url}});}
-.color-swatch.color-swatch--459 {--background-image: url({{'swatch-459.jpg' | file_img_url}});}
-.color-swatch.color-swatch--460 {--background-image: url({{'swatch-460.jpg' | file_img_url}});}
-.color-swatch.color-swatch--461 {--background-image: url({{'swatch-461.jpg' | file_img_url}});}
-.color-swatch.color-swatch--462 {--background-image: url({{'swatch-462.jpg' | file_img_url}});}
-.color-swatch.color-swatch--463 {--background-image: url({{'swatch-463.png' | file_img_url}});}
-.color-swatch.color-swatch--new-463 {--background-image: url({{'swatch-new-463.png' | file_img_url}});}
-.color-swatch.color-swatch--464 {--background-image: url({{'swatch-464.png' | file_img_url}});}
-.color-swatch.color-swatch--new-464 {--background-image: url({{'swatch-new-464.png' | file_img_url}});}
-
-.color-swatch.color-swatch--500 {--background-image: url({{'swatch-500.png' | file_img_url}});}
-.color-swatch.color-swatch--501 {--background-image: url({{'swatch-501.png' | file_img_url}});}
-.color-swatch.color-swatch--504 {--background-image: url({{'swatch-504.png' | file_img_url}});}
-.color-swatch.color-swatch--512 {--background-image: url({{'swatch-512.jpg' | file_img_url}});}
-.color-swatch.color-swatch--513 {--background-image: url({{'swatch-513.jpg' | file_img_url}});}
-.color-swatch.color-swatch--514 {--background-image: url({{'swatch-514.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss-514 {--background-image: url({{'swatch-ss-514.jpg' | file_img_url}});}
-.color-swatch.color-swatch--515 {--background-image: url({{'swatch-515.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--560 {--background-image: url({{'swatch-560.png' | file_img_url}});}
-.color-swatch.color-swatch--561 {--background-image: url({{'swatch-561.png' | file_img_url}});}
-.color-swatch.color-swatch--562 {--background-image: url({{'swatch-562.png' | file_img_url}});}
-
-.color-swatch.color-swatch--601 {--background-color: #13c9eb;}
-.color-swatch.color-swatch--ratchet-601 {--background-image: url({{'swatch-ratchet-601.jpg' | file_img_url}});}
-.color-swatch.color-swatch--602 {--background-image: url({{'swatch-ratchet-602.jpg' | file_img_url}});}
-.color-swatch.color-swatch--605 {--background-image: url({{'swatch-605.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss-605 {--background-image: url({{'swatch-ss-605.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ratchet-605 {--background-image: url({{'swatch-ratchet-605.jpg' | file_img_url}});}
-.color-swatch.color-swatch--606 {--background-color: #ec2173;}
-.color-swatch.color-swatch--608 {--background-color: #ffdf28;}
-.color-swatch.color-swatch--609 {--background-color: #ffaa4d;}
-.color-swatch.color-swatch--611 {--background-color: #8bef14;}
-.color-swatch.color-swatch--617 {--background-color: #f58e13;}
-.color-swatch.color-swatch--660 {--background-image: url({{'swatch-660.png' | file_img_url}});}
-.color-swatch.color-swatch--new-660 {--background-image: url({{'swatch-new-660.png' | file_img_url}});}
-.color-swatch.color-swatch--662 {--background-image: url({{'swatch-662.png' | file_img_url}});}
-.color-swatch.color-swatch--new-662 {--background-image: url({{'swatch-new-662.png' | file_img_url}});}
-
-.color-swatch.color-swatch--701 {--background-image: url({{'swatch-701.png' | file_img_url}});}
-.color-swatch.color-swatch--ltd-701 {--background-image: url({{'swatch-ltd-701.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-ltd-701 {--background-image: url({{'swatch-new-ltd-701.png' | file_img_url}});}
-.color-swatch.color-swatch--baja-701 {--background-image: url({{'swatch-baja-701.png' | file_img_url}});}
-.color-swatch.color-swatch--702 {--background-image: url({{'swatch-702.png' | file_img_url}});}
-.color-swatch.color-swatch--704 {--background-image: url({{'swatch-704.png' | file_img_url}});}
-.color-swatch.color-swatch--705 {--background-image: url({{'swatch-705.png' | file_img_url}});}
-.color-swatch.color-swatch--new-705 {--background-image: url({{'swatch-new-705.png' | file_img_url}});}
-.color-swatch.color-swatch--706 {--background-image: url({{'swatch-706.png' | file_img_url}});}
-.color-swatch.color-swatch--ltd-707 {--background-image: url({{'swatch-ltd-707.jpg' | file_img_url}});}
-.color-swatch.color-swatch--708 {--background-image: url({{'swatch-708.png' | file_img_url}});}
-.color-swatch.color-swatch--709 {--background-image: url({{'swatch-709.png' | file_img_url}});}
-.color-swatch.color-swatch--new-709 {--background-image: url({{'swatch-new-709.png' | file_img_url}});}
-.color-swatch.color-swatch--710 {--background-image: url({{'swatch-710.jpg' | file_img_url}});}
-.color-swatch.color-swatch--711 {--background-image: url({{'swatch-711.jpg' | file_img_url}});}
-.color-swatch.color-swatch--713 {--background-image: url({{'swatch-rope-713.jpg' | file_img_url}});}
-.color-swatch.color-swatch--715 {--background-image: url({{'swatch-715.jpg' | file_img_url}});}
-.color-swatch.color-swatch--719 {--background-image: url({{'swatch-719.png' | file_img_url}});}
-.color-swatch.color-swatch--new-719 {--background-image: url({{'swatch-new-719.png' | file_img_url}});}
-
-.color-swatch.color-swatch--748 {--background-color: #6d7f97;}
-.color-swatch.color-swatch--749 {--background-color: #e1e1e1;}
-.color-swatch.color-swatch--771 {--background-color: #c44b8f;}
-.color-swatch.color-swatch--776 {--background-color: #ff6068;}
-.color-swatch.color-swatch--781 {--background-color: #4e9b5b;}
-.color-swatch.color-swatch--786 {--background-color: #48975e;}
-.color-swatch.color-swatch--787 {--background-image: url({{'swatch-787.png' | file_img_url}});}
-.color-swatch.color-swatch--789 {--background-image: url({{'swatch-789.png' | file_img_url}});}
-.color-swatch.color-swatch--new-789 {--background-image: url({{'swatch-new-789.png' | file_img_url}});}
-.color-swatch.color-swatch--791 {--background-image: url({{'swatch-791.jpg' | file_img_url}});}
-.color-swatch.color-swatch--792 {--background-image: url({{'swatch-792.jpg' | file_img_url}});}
-.color-swatch.color-swatch--793 {--background-image: url({{'swatch-793.jpg' | file_img_url}});}
-.color-swatch.color-swatch--794 {--background-image: url({{'swatch-794.jpg' | file_img_url}});}
-.color-swatch.color-swatch--795 {--background-image: url({{'swatch-795.jpg' | file_img_url}});}
-.color-swatch.color-swatch--796 {--background-image: url({{'swatch-796.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--802 {--background-image: url({{'swatch-802.jpg' | file_img_url}});}
-.color-swatch.color-swatch--803 {--background-image: url({{'swatch-803.jpg' | file_img_url}});}
-.color-swatch.color-swatch--804 {--background-image: url({{'swatch-804.jpg' | file_img_url}});}
-.color-swatch.color-swatch--805 {--background-image: url({{'swatch-805.jpg' | file_img_url}});}
-.color-swatch.color-swatch--806 {--background-image: url({{'swatch-806.jpg' | file_img_url}});}
-.color-swatch.color-swatch--809 {--background-image: url({{'swatch-809.jpg' | file_img_url}});}
-.color-swatch.color-swatch--rope-809 {--background-image: url({{'swatch-rope-809.jpg' | file_img_url}});}
-.color-swatch.color-swatch--811 {--background-image: url({{'swatch-rope-811.jpg' | file_img_url}});}
-.color-swatch.color-swatch--812 {--background-image: url({{'swatch-rope-812.jpg' | file_img_url}});}
-.color-swatch.color-swatch--813 {--background-image: url({{'swatch-rope-813.jpg' | file_img_url}});}
-.color-swatch.color-swatch--814 {--background-image: url({{'swatch-rope-814.jpg' | file_img_url}});}
-.color-swatch.color-swatch--827 {--background-image: url({{'swatch-rope-827.jpg' | file_img_url}});}
-.color-swatch.color-swatch--828 {--background-image: url({{'swatch-rope-828.jpg' | file_img_url}});}
-.color-swatch.color-swatch--832 {--background-image: url({{'swatch-ratchet-832.jpg' | file_img_url}});}
-.color-swatch.color-swatch--837 {--background-image: url({{'swatch-rope-837.jpg' | file_img_url}});}
-.color-swatch.color-swatch--830 {--background-color: #e76b9b;}
-.color-swatch.color-swatch--842 {--background-image: url({{'swatch-rope-842.jpg' | file_img_url}});}
-.color-swatch.color-swatch--845 {--background-image: url({{'swatch-rope-845.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--851 {--background-image: url({{'swatch-rope-851.jpg' | file_img_url}});}
-.color-swatch.color-swatch--862 {--background-image: url({{'swatch-rope-862.jpg' | file_img_url}});}
-.color-swatch.color-swatch--863 {--background-image: url({{'swatch-rope-863.jpg' | file_img_url}});}
-.color-swatch.color-swatch--866 {--background-image: url({{'swatch-rope-866.jpg' | file_img_url}});}
-.color-swatch.color-swatch--870 {--background-image: url({{'swatch-rope-870.jpg' | file_img_url}});}
-.color-swatch.color-swatch--871 {--background-image: url({{'swatch-rope-871.jpg' | file_img_url}});}
-.color-swatch.color-swatch--872 {--background-image: url({{'swatch-colorado.jpg' | file_img_url}});}
-.color-swatch.color-swatch--874 {--background-image: url({{'swatch-874.jpg' | file_img_url}});}
-.color-swatch.color-swatch--875 {--background-image: url({{'swatch-875.jpg' | file_img_url}});}
-.color-swatch.color-swatch--876 {--background-image: url({{'swatch-876.jpg' | file_img_url}});}
-.color-swatch.color-swatch--877 {--background-image: url({{'swatch-877.png' | file_img_url}});}
-.color-swatch.color-swatch--new-877 {--background-image: url({{'swatch-new-877.png' | file_img_url}});}
-.color-swatch.color-swatch--879 {--background-image: url({{'swatch-879.jpg' | file_img_url}});}
-.color-swatch.color-swatch--880 {--background-image: url({{'swatch-880.png' | file_img_url}});}
-.color-swatch.color-swatch--881 {--background-image: url({{'swatch-881.png' | file_img_url}});}
-.color-swatch.color-swatch--new-881 {--background-image: url({{'swatch-new-881.png' | file_img_url}});}
-.color-swatch.color-swatch--883 {--background-image: url({{'swatch-883.jpg' | file_img_url}});}
-.color-swatch.color-swatch--884 {--background-image: url({{'swatch-884.jpg' | file_img_url}});}
-.color-swatch.color-swatch--885 {--background-image: url({{'swatch-885.jpg' | file_img_url}});}
-.color-swatch.color-swatch--886 {--background-image: url({{'swatch-886.jpg' | file_img_url}});}
-.color-swatch.color-swatch--887 {--background-image: url({{'swatch-887.jpg' | file_img_url}});}
-.color-swatch.color-swatch--888 {--background-image: url({{'swatch-888.jpg' | file_img_url}});}
-.color-swatch.color-swatch--889 {--background-image: url({{'swatch-889.jpg' | file_img_url}});}
-.color-swatch.color-swatch--890 {--background-image: url({{'swatch-890.jpg' | file_img_url}});}
-.color-swatch.color-swatch--891 {--background-image: url({{'swatch-891.jpg' | file_img_url}});}
-.color-swatch.color-swatch--892 {--background-image: url({{'swatch-892.jpg' | file_img_url}});}
-.color-swatch.color-swatch--893 {--background-image: url({{'swatch-893.jpg' | file_img_url}});}
-.color-swatch.color-swatch--894 {--background-image: url({{'swatch-894.jpg' | file_img_url}});}
-.color-swatch.color-swatch--895 {--background-image: url({{'swatch-895.jpg' | file_img_url}});}
-.color-swatch.color-swatch--896 {--background-image: url({{'swatch-896.jpg' | file_img_url}});}
-.color-swatch.color-swatch--898 {--background-image: url({{'swatch-898.jpg' | file_img_url}});}
-.color-swatch.color-swatch--899 {--background-image: url({{'swatch-899.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--903 {--background-image: url({{'swatch-903.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ltd-911 {--background-image: url({{'swatch-ltd-911.jpg' | file_img_url}});}
-.color-swatch.color-swatch--915 {--background-image: url({{'swatch-915.png' | file_img_url}});}
-.color-swatch.color-swatch--920 {--background-image: url({{'swatch-920.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-920 {--background-image: url({{'swatch-new-920.png' | file_img_url}});}
-.color-swatch.color-swatch--new-neo-920 {--background-image: url({{'swatch-new-neo-920.png' | file_img_url}});}
-.color-swatch.color-swatch--neo-920 {--background-image: url({{'swatch-neo-920.jpg' | file_img_url}});}
-.color-swatch.color-swatch--921 {--background-image: url({{'swatch-921.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-921 {--background-image: url({{'swatch-new-921.png' | file_img_url}});}
-.color-swatch.color-swatch--new-neo-921 {--background-image: url({{'swatch-new-neo-921.png' | file_img_url}});}
-.color-swatch.color-swatch--neo-921 {--background-image: url({{'swatch-neo-921.jpg' | file_img_url}});}
-.color-swatch.color-swatch--922 {--background-image: url({{'swatch-922.jpg' | file_img_url}});}
-.color-swatch.color-swatch--neo-922 {--background-image: url({{'swatch-neo-922.jpg' | file_img_url}});}
-.color-swatch.color-swatch--937 {--background-image: url({{'swatch-937.jpg' | file_img_url}});}
-.color-swatch.color-swatch--938 {--background-image: url({{'swatch-938.jpg' | file_img_url}});}
-.color-swatch.color-swatch--939 {--background-image: url({{'swatch-939.jpg' | file_img_url}});}
-.color-swatch.color-swatch--940 {--background-image: url({{'swatch-940.jpg' | file_img_url}});}
-.color-swatch.color-swatch--941 {--background-image: url({{'swatch-941.jpg' | file_img_url}});}
-.color-swatch.color-swatch--942 {--background-image: url({{'swatch-942.jpg' | file_img_url}});}
-.color-swatch.color-swatch--943 {--background-image: url({{'swatch-943.jpg' | file_img_url}});}
-.color-swatch.color-swatch--944 {--background-image: url({{'swatch-944.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--950 {--background-image: url({{'swatch-950.jpg' | file_img_url}});}
-.color-swatch.color-swatch--951 {--background-image: url({{'swatch-951.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-951 {--background-image: url({{'swatch-new-951.png' | file_img_url}});}
-.color-swatch.color-swatch--990 {--background-image: url({{'swatch-990.png' | file_img_url}});}
-.color-swatch.color-swatch--new-990 {--background-image: url({{'swatch-new-990.png' | file_img_url}});}
-.color-swatch.color-swatch--991 {--background-image: url({{'swatch-991.png' | file_img_url}});}
-.color-swatch.color-swatch--new-991 {--background-image: url({{'swatch-new-991.png' | file_img_url}});}
-.color-swatch.color-swatch--996 {--background-image: url({{'swatch-996.png' | file_img_url}});}
-.color-swatch.color-swatch--new-996 {--background-image: url({{'swatch-new-996.png' | file_img_url}});}
-.color-swatch.color-swatch--997 {--background-image: url({{'swatch-997.png' | file_img_url}});}
-.color-swatch.color-swatch--new-997 {--background-image: url({{'swatch-new-997.png' | file_img_url}});}
-.color-swatch.color-swatch--ssw-999 {--background-image: url({{'swatch-ssw-999.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--1008 {--background-image: url({{'swatch-1008.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1008 {--background-image: url({{'swatch-new-1008.png' | file_img_url}});}
-.color-swatch.color-swatch--1010 {--background-image: url({{'swatch-1010.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1012 {--background-image: url({{'swatch-1012.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1012 {--background-image: url({{'swatch-new-1012.png' | file_img_url}});}
-.color-swatch.color-swatch--1014 {--background-image: url({{'swatch-1014.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1019 {--background-image: url({{'swatch-1019.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1020 {--background-image: url({{'swatch-1020.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-1020 {--background-image: url({{'swatch-new-1020.png' | file_img_url}});}
-.color-swatch.color-swatch--1021 {--background-image: url({{'swatch-1021.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1022 {--background-image: url({{'swatch-1022.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1022 {--background-image: url({{'swatch-new-1022.png' | file_img_url}});}
-.color-swatch.color-swatch--1025 {--background-image: url({{'swatch-1025.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1026 {--background-image: url({{'swatch-1026.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1026 {--background-image: url({{'swatch-new-1026.png' | file_img_url}});}
-.color-swatch.color-swatch--1027 {--background-image: url({{'swatch-1027.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1027 {--background-image: url({{'swatch-new-1027.png' | file_img_url}});}
-.color-swatch.color-swatch--1028 {--background-image: url({{'swatch-1028.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1028 {--background-image: url({{'swatch-new-1028.png' | file_img_url}});}
-.color-swatch.color-swatch--1029 {--background-image: url({{'swatch-1029.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1029 {--background-image: url({{'swatch-new-1029.png' | file_img_url}});}
-.color-swatch.color-swatch--1030 {--background-image: url({{'swatch-1030.jpg' | file_img_url}});}
-.color-swatch.color-swatch--new-1030 {--background-image: url({{'swatch-new-1030.png' | file_img_url}});}
-.color-swatch.color-swatch--1031 {--background-image: url({{'swatch-1031.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1033 {--background-image: url({{'swatch-1033.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1033 {--background-image: url({{'swatch-new-1033.png' | file_img_url}});}
-.color-swatch.color-swatch--1034 {--background-image: url({{'swatch-1034.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1034 {--background-image: url({{'swatch-new-1034.png' | file_img_url}});}
-.color-swatch.color-swatch--1041 {--background-image: url({{'swatch-1041.png' | file_img_url}});}
-.color-swatch.color-swatch--new-1041 {--background-image: url({{'swatch-new-1041.png' | file_img_url}});}
+.color-swatch.color-swatch--204 {background-image: url({{'swatch-204.png' | file_img_url}});}
+.color-swatch.color-swatch--217 {background-color: #8c2f30;}
+.color-swatch.color-swatch--new-217 {background-image: url({{'swatch-new-217.jpg' | file_img_url}});}
+.color-swatch.color-swatch--braided-217 {background-color: #6a152d;}
+.color-swatch.color-swatch--218 {background-color: #c9e079;}
+.color-swatch.color-swatch--219 {background-color: #cff471;}
+.color-swatch.color-swatch--223 {background-color: #85a8cb;}
+.color-swatch.color-swatch--225 {background-image: url({{'swatch-225.png' | file_img_url}});}
+.color-swatch.color-swatch--226 {background-image: url({{'swatch-226.png' | file_img_url}});}
+.color-swatch.color-swatch--227 {background-image: url({{'swatch-227.png' | file_img_url}});}
+.color-swatch.color-swatch--228 {background-image: url({{'swatch-228.png' | file_img_url}});}
+.color-swatch.color-swatch--229 {background-image: url({{'swatch-229.png' | file_img_url}});}
+.color-swatch.color-swatch--230 {background-image: url({{'swatch-230.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-230 {background-image: url({{'swatch-new-230.jpg' | file_img_url}});}
+.color-swatch.color-swatch--231 {background-image: url({{'swatch-231.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-231 {background-image: url({{'swatch-new-231.jpg' | file_img_url}});}
+.color-swatch.color-swatch--232 {background-image: url({{'swatch-232.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-232 {background-image: url({{'swatch-new-232.jpg' | file_img_url}});}
+.color-swatch.color-swatch--234 {background-image: url({{'swatch-234.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-234 {background-image: url({{'swatch-new-234.jpg' | file_img_url}});}
+.color-swatch.color-swatch--235 {background-image: url({{'swatch-235.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-235 {background-image: url({{'swatch-new-235.jpg' | file_img_url}});}
+.color-swatch.color-swatch--236 {background-image: url({{'swatch-236.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-236 {background-image: url({{'swatch-new-236.jpg' | file_img_url}});}
+.color-swatch.color-swatch--237 {background-image: url({{'swatch-237.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-237 {background-image: url({{'swatch-new-237.jpg' | file_img_url}});}
+.color-swatch.color-swatch--238 {background-image: url({{'swatch-238.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-238 {background-image: url({{'swatch-new-238.jpg' | file_img_url}});}
+.color-swatch.color-swatch--239 {background-image: url({{'swatch-239.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-239 {background-image: url({{'swatch-new-239.jpg' | file_img_url}});}
+.color-swatch.color-swatch--240 {background-image: url({{'swatch-240.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-240 {background-image: url({{'swatch-new-240.jpg' | file_img_url}});}
+.color-swatch.color-swatch--241 {background-image: url({{'swatch-241.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-241 {background-image: url({{'swatch-new-241.jpg' | file_img_url}});}
+.color-swatch.color-swatch--242 {background-image: url({{'swatch-242.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-242 {background-image: url({{'swatch-new-242.jpg' | file_img_url}});}
+.color-swatch.color-swatch--249 {background-image: url({{'swatch-249.jpg' | file_img_url}});}
+.color-swatch.color-swatch--250 {background-color: #00a3e0;}
+.color-swatch.color-swatch--silicone-250 {background-color: #7bc5a4;}
+.color-swatch.color-swatch--257 {background-image: url({{'swatch-257.png' | file_img_url}});}
+.color-swatch.color-swatch--264 {background-color: #ebc121;}
+.color-swatch.color-swatch--271 {background-color: #bab092;}
+.color-swatch.color-swatch--new-271 {background-image: url({{'swatch-new-271.jpg' | file_img_url}});}
+.color-swatch.color-swatch--272 {background-image: url({{'swatch-272.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-272 {background-image: url({{'swatch-new-272.jpg' | file_img_url}});}
+.color-swatch.color-swatch--273 {background-image: url({{'swatch-273.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-273 {background-image: url({{'swatch-new-273.jpg' | file_img_url}});}
+.color-swatch.color-swatch--274 {background-image: url({{'swatch-274.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-274 {background-image: url({{'swatch-new-274.jpg' | file_img_url}});}
+.color-swatch.color-swatch--276 {background-color: #2d338c;}
+.color-swatch.color-swatch--new-276 {background-image: url({{'swatch-new-276.jpg' | file_img_url}});}
+.color-swatch.color-swatch--279 {background-color: #be9e7e;}
+.color-swatch.color-swatch--280 {background-color: #e3605a;}
+.color-swatch.color-swatch--281 {background-color: #575b87;}
+.color-swatch.color-swatch--282 {background-color: #50b4a5;}
+.color-swatch.color-swatch--new-282 {background-image: url({{'swatch-new-282.jpg' | file_img_url}});}
+.color-swatch.color-swatch--283 {background-color: #c7da44;}
+.color-swatch.color-swatch--new-283 {background-image: url({{'swatch-new-283.jpg' | file_img_url}});}
+.color-swatch.color-swatch--284 {background-color: #e3605a;}
+.color-swatch.color-swatch--new-284 {background-image: url({{'swatch-new-284.jpg' | file_img_url}});}
+.color-swatch.color-swatch--285 {background-image: url({{'swatch-285.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-285 {background-image: url({{'swatch-new-285.jpg' | file_img_url}});}
+.color-swatch.color-swatch--286 {background-image: url({{'swatch-286.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-286 {background-image: url({{'swatch-new-286.jpg' | file_img_url}});}
+.color-swatch.color-swatch--287 {background-image: url({{'swatch-287.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-287 {background-image: url({{'swatch-new-287.jpg' | file_img_url}});}
+.color-swatch.color-swatch--288 {background-image: url({{'swatch-288.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-288 {background-image: url({{'swatch-new-288.jpg' | file_img_url}});}
+.color-swatch.color-swatch--290 {background-image: url({{'swatch-290.png' | file_img_url}});}
+.color-swatch.color-swatch--291 {background-image: url({{'swatch-291.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-291 {background-image: url({{'swatch-new-291.jpg' | file_img_url}});}
+.color-swatch.color-swatch--292 {background-image: url({{'swatch-292.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-292 {background-image: url({{'swatch-new-292.jpg' | file_img_url}});}
+.color-swatch.color-swatch--293 {background-image: url({{'swatch-293.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-293 {background-image: url({{'swatch-new-293.jpg' | file_img_url}});}
+.color-swatch.color-swatch--294 {background-image: url({{'swatch-294.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-294 {background-image: url({{'swatch-new-294.jpg' | file_img_url}});}
+.color-swatch.color-swatch--295 {background-image: url({{'swatch-295.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-295 {background-image: url({{'swatch-new-295.jpg' | file_img_url}});}
+.color-swatch.color-swatch--296 {background-image: url({{'swatch-296.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-296 {background-image: url({{'swatch-new-296.jpg' | file_img_url}});}
+.color-swatch.color-swatch--297 {background-image: url({{'swatch-297.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-297 {background-image: url({{'swatch-new-297.jpg' | file_img_url}});}
+.color-swatch.color-swatch--298 {background-image: url({{'swatch-298.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-298 {background-image: url({{'swatch-new-298.jpg' | file_img_url}});}
+.color-swatch.color-swatch--299 {background-image: url({{'swatch-299.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-299 {background-image: url({{'swatch-new-299.jpg' | file_img_url}});}
 
 
-.color-swatch.color-swatch--100-seersucker {--background-image: url({{'swatch-100.jpg' | file_img_url}});}
-.color-swatch.color-swatch--101-seersucker {--background-image: url({{'swatch-101.jpg' | file_img_url}});}
-.color-swatch.color-swatch--106-seersucker {--background-image: url({{'swatch-106.jpg' | file_img_url}});}
-.color-swatch.color-swatch--109-seersucker {--background-image: url({{'swatch-109.jpg' | file_img_url}});}
-.color-swatch.color-swatch--166-seersucker {--background-image: url({{'swatch-166.jpg' | file_img_url}});}
-.color-swatch.color-swatch--601-seersucker {--background-image: url({{'swatch-601.jpg' | file_img_url}});}
-.color-swatch.color-swatch--781-seersucker {--background-image: url({{'swatch-781.jpg' | file_img_url}});}
+.color-swatch.color-swatch--300 {background-image: url({{'swatch-300.png' | file_img_url}});}
+.color-swatch.color-swatch--new-300 {background-image: url({{'swatch-new-300.png' | file_img_url}});}
+.color-swatch.color-swatch--306 {background-image: url({{'swatch-306.jpg' | file_img_url}});}
+.color-swatch.color-swatch--307 {background-image: url({{'swatch-307.jpg' | file_img_url}});}
+.color-swatch.color-swatch--308 {background-image: url({{'swatch-308.jpg' | file_img_url}});}
+.color-swatch.color-swatch--309 {background-image: url({{'swatch-309.jpg' | file_img_url}});}
+.color-swatch.color-swatch--310 {background-image: url({{'swatch-310.jpg' | file_img_url}});}
+.color-swatch.color-swatch--311 {background-image: url({{'swatch-311.jpg' | file_img_url}});}
+.color-swatch.color-swatch--312 {background-image: url({{'swatch-312.jpg' | file_img_url}});}
+.color-swatch.color-swatch--313 {background-image: url({{'swatch-313.jpg' | file_img_url}});}
+.color-swatch.color-swatch--314 {background-image: url({{'swatch-314.jpg' | file_img_url}});}
+.color-swatch.color-swatch--315 {background-image: url({{'swatch-315.jpg' | file_img_url}});}
+.color-swatch.color-swatch--318 {background-image: url({{'swatch-318.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-318 {background-image: url({{'swatch-new-318.jpg' | file_img_url}});}
+.color-swatch.color-swatch--319 {background-image: url({{'swatch-ratchet-319.jpg' | file_img_url}});}
+.color-swatch.color-swatch--320 {background-image: url({{'swatch-rope-320.jpg' | file_img_url}});}
+.color-swatch.color-swatch--329 {background-image: url({{'swatch-329.jpg' | file_img_url}});}
+.color-swatch.color-swatch--rope-329 {background-image: url({{'swatch-rope-329.jpg' | file_img_url}});}
+.color-swatch.color-swatch--340 {background-image: url({{'swatch-340.jpg' | file_img_url}});}
+.color-swatch.color-swatch--342 {background-image: url({{'swatch-ratchet-342.jpg' | file_img_url}});}
+.color-swatch.color-swatch--349 {background-image: url({{'swatch-349.jpg' | file_img_url}});}
+.color-swatch.color-swatch--350 {background-image: url({{'swatch-rope-350.jpg' | file_img_url}});}
+.color-swatch.color-swatch--350 {background-image: url({{'swatch-350.jpg' | file_img_url}});}
+.color-swatch.color-swatch--351 {background-image: url({{'swatch-351.jpg' | file_img_url}});}
+.color-swatch.color-swatch--352 {background-image: url({{'swatch-352.jpg' | file_img_url}});}
+.color-swatch.color-swatch--354 {background-image: url({{'swatch-354.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-354 {background-image: url({{'swatch-new-354.jpg' | file_img_url}});}
+.color-swatch.color-swatch--356 {background-image: url({{'swatch-356.jpg' | file_img_url}});}
+.color-swatch.color-swatch--357 {background-color: #a9a8a8;}
+.color-swatch.color-swatch--358 {background-color: #faca3e;}
+.color-swatch.color-swatch--359 {background-color: #efa43c;}
+.color-swatch.color-swatch--360 {background-color: #485b38;}
+.color-swatch.color-swatch--361 {background-color: #b3c9da;}
+.color-swatch.color-swatch--362 {background-color: #575f68;}
+.color-swatch.color-swatch--363 {background-color: #afb1b2;}
+.color-swatch.color-swatch--364 {background-color: #c9baa3;}
+.color-swatch.color-swatch--365 {background-color: #3e5487;}
+.color-swatch.color-swatch--367 {background-color: #8e8b82;}
+.color-swatch.color-swatch--368 {background-color: #712b2b;}
+.color-swatch.color-swatch--369 {background-color: #dca448;}
+.color-swatch.color-swatch--370 {background-color: #4aa6b0;}
+.color-swatch.color-swatch--371 {background-image: url({{'swatch-371.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-371 {background-image: url({{'swatch-new-371.jpg' | file_img_url}});}
+.color-swatch.color-swatch--372 {background-image: url({{'swatch-372.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-372 {background-image: url({{'swatch-new-372.jpg' | file_img_url}});}
+.color-swatch.color-swatch--374 {background-image: url({{'swatch-374.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss-374 {background-image: url({{'swatch-ss-374.jpg' | file_img_url}});}
+.color-swatch.color-swatch--375 {background-image: url({{'swatch-375.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-375 {background-image: url({{'swatch-new-375.jpg' | file_img_url}});}
+.color-swatch.color-swatch--376 {background-image: url({{'swatch-376.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-376 {background-image: url({{'swatch-new-376.jpg' | file_img_url}});}
+.color-swatch.color-swatch--377 {background-image: url({{'swatch-377.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-377 {background-image: url({{'swatch-new-377.jpg' | file_img_url}});}
+.color-swatch.color-swatch--378 {background-image: url({{'swatch-378.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-378 {background-image: url({{'swatch-new-378.jpg' | file_img_url}});}
+.color-swatch.color-swatch--379 {background-image: url({{'swatch-379.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-379 {background-image: url({{'swatch-new-379.jpg' | file_img_url}});}
+.color-swatch.color-swatch--390 {background-color: #64534f;}
+.color-swatch.color-swatch--391 {background-color: #4d5751;}
+
+.color-swatch.color-swatch--405 {background-image: url({{'swatch-405.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-405 {background-image: url({{'swatch-new-405.png' | file_img_url}});}
+.color-swatch.color-swatch--406 {background-image: url({{'swatch-406.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-406 {background-image: url({{'swatch-new-406.png' | file_img_url}});}
+.color-swatch.color-swatch--408 {background-image: url({{'swatch-408.jpg' | file_img_url}});}
+.color-swatch.color-swatch--449 {background-image: url({{'swatch-449.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-449 {background-image: url({{'swatch-new-449.jpg' | file_img_url}});}
+.color-swatch.color-swatch--450 {background-image: url({{'swatch-450.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-450 {background-image: url({{'swatch-new-450.png' | file_img_url}});}
+.color-swatch.color-swatch--456 {background-image: url({{'swatch-456.jpg' | file_img_url}});}
+.color-swatch.color-swatch--457 {background-image: url({{'swatch-457.jpg' | file_img_url}});}
+.color-swatch.color-swatch--458 {background-image: url({{'swatch-458.jpg' | file_img_url}});}
+.color-swatch.color-swatch--459 {background-image: url({{'swatch-459.jpg' | file_img_url}});}
+.color-swatch.color-swatch--460 {background-image: url({{'swatch-460.jpg' | file_img_url}});}
+.color-swatch.color-swatch--461 {background-image: url({{'swatch-461.jpg' | file_img_url}});}
+.color-swatch.color-swatch--462 {background-image: url({{'swatch-462.jpg' | file_img_url}});}
+.color-swatch.color-swatch--463 {background-image: url({{'swatch-463.png' | file_img_url}});}
+.color-swatch.color-swatch--new-463 {background-image: url({{'swatch-new-463.png' | file_img_url}});}
+.color-swatch.color-swatch--464 {background-image: url({{'swatch-464.png' | file_img_url}});}
+.color-swatch.color-swatch--new-464 {background-image: url({{'swatch-new-464.png' | file_img_url}});}
+
+.color-swatch.color-swatch--500 {background-image: url({{'swatch-500.png' | file_img_url}});}
+.color-swatch.color-swatch--501 {background-image: url({{'swatch-501.png' | file_img_url}});}
+.color-swatch.color-swatch--504 {background-image: url({{'swatch-504.png' | file_img_url}});}
+.color-swatch.color-swatch--512 {background-image: url({{'swatch-512.jpg' | file_img_url}});}
+.color-swatch.color-swatch--513 {background-image: url({{'swatch-513.jpg' | file_img_url}});}
+.color-swatch.color-swatch--514 {background-image: url({{'swatch-514.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss-514 {background-image: url({{'swatch-ss-514.jpg' | file_img_url}});}
+.color-swatch.color-swatch--515 {background-image: url({{'swatch-515.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--560 {background-image: url({{'swatch-560.png' | file_img_url}});}
+.color-swatch.color-swatch--561 {background-image: url({{'swatch-561.png' | file_img_url}});}
+.color-swatch.color-swatch--562 {background-image: url({{'swatch-562.png' | file_img_url}});}
+
+.color-swatch.color-swatch--601 {background-color: #13c9eb;}
+.color-swatch.color-swatch--ratchet-601 {background-image: url({{'swatch-ratchet-601.jpg' | file_img_url}});}
+.color-swatch.color-swatch--602 {background-image: url({{'swatch-ratchet-602.jpg' | file_img_url}});}
+.color-swatch.color-swatch--605 {background-image: url({{'swatch-605.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss-605 {background-image: url({{'swatch-ss-605.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ratchet-605 {background-image: url({{'swatch-ratchet-605.jpg' | file_img_url}});}
+.color-swatch.color-swatch--606 {background-color: #ec2173;}
+.color-swatch.color-swatch--608 {background-color: #ffdf28;}
+.color-swatch.color-swatch--609 {background-color: #ffaa4d;}
+.color-swatch.color-swatch--611 {background-color: #8bef14;}
+.color-swatch.color-swatch--617 {background-color: #f58e13;}
+.color-swatch.color-swatch--660 {background-image: url({{'swatch-660.png' | file_img_url}});}
+.color-swatch.color-swatch--new-660 {background-image: url({{'swatch-new-660.png' | file_img_url}});}
+.color-swatch.color-swatch--662 {background-image: url({{'swatch-662.png' | file_img_url}});}
+.color-swatch.color-swatch--new-662 {background-image: url({{'swatch-new-662.png' | file_img_url}});}
+.color-swatch.color-swatch--699 {background-image: url({{'swatch-699.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-699 {background-image: url({{'swatch-new-699.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--701 {background-image: url({{'swatch-701.png' | file_img_url}});}
+.color-swatch.color-swatch--ltd-701 {background-image: url({{'swatch-ltd-701.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-ltd-701 {background-image: url({{'swatch-new-ltd-701.png' | file_img_url}});}
+.color-swatch.color-swatch--baja-701 {background-image: url({{'swatch-baja-701.png' | file_img_url}});}
+.color-swatch.color-swatch--702 {background-image: url({{'swatch-702.png' | file_img_url}});}
+.color-swatch.color-swatch--704 {background-image: url({{'swatch-704.png' | file_img_url}});}
+.color-swatch.color-swatch--705 {background-image: url({{'swatch-705.png' | file_img_url}});}
+.color-swatch.color-swatch--new-705 {background-image: url({{'swatch-new-705.png' | file_img_url}});}
+.color-swatch.color-swatch--706 {background-image: url({{'swatch-706.png' | file_img_url}});}
+.color-swatch.color-swatch--ltd-707 {background-image: url({{'swatch-ltd-707.jpg' | file_img_url}});}
+.color-swatch.color-swatch--708 {background-image: url({{'swatch-708.png' | file_img_url}});}
+.color-swatch.color-swatch--709 {background-image: url({{'swatch-709.png' | file_img_url}});}
+.color-swatch.color-swatch--new-709 {background-image: url({{'swatch-new-709.png' | file_img_url}});}
+.color-swatch.color-swatch--710 {background-image: url({{'swatch-710.jpg' | file_img_url}});}
+.color-swatch.color-swatch--711 {background-image: url({{'swatch-711.jpg' | file_img_url}});}
+.color-swatch.color-swatch--713 {background-image: url({{'swatch-rope-713.jpg' | file_img_url}});}
+.color-swatch.color-swatch--715 {background-image: url({{'swatch-715.jpg' | file_img_url}});}
+.color-swatch.color-swatch--719 {background-image: url({{'swatch-719.png' | file_img_url}});}
+.color-swatch.color-swatch--new-719 {background-image: url({{'swatch-new-719.png' | file_img_url}});}
+.color-swatch.color-swatch--720 {background-color: #123b1d;}
+.color-swatch.color-swatch--new-720 {background-image: url({{'swatch-new-720.jpg' | file_img_url}});}
+.color-swatch.color-swatch--748 {background-color: #6d7f97;}
+.color-swatch.color-swatch--749 {background-color: #e1e1e1;}
+.color-swatch.color-swatch--771 {background-color: #c44b8f;}
+.color-swatch.color-swatch--776 {background-color: #ff6068;}
+.color-swatch.color-swatch--781 {background-color: #4e9b5b;}
+.color-swatch.color-swatch--786 {background-color: #48975e;}
+.color-swatch.color-swatch--787 {background-image: url({{'swatch-787.png' | file_img_url}});}
+.color-swatch.color-swatch--789 {background-image: url({{'swatch-789.png' | file_img_url}});}
+.color-swatch.color-swatch--new-789 {background-image: url({{'swatch-new-789.png' | file_img_url}});}
+.color-swatch.color-swatch--791 {background-image: url({{'swatch-791.jpg' | file_img_url}});}
+.color-swatch.color-swatch--792 {background-image: url({{'swatch-792.jpg' | file_img_url}});}
+.color-swatch.color-swatch--793 {background-image: url({{'swatch-793.jpg' | file_img_url}});}
+.color-swatch.color-swatch--794 {background-image: url({{'swatch-794.jpg' | file_img_url}});}
+.color-swatch.color-swatch--795 {background-image: url({{'swatch-795.jpg' | file_img_url}});}
+.color-swatch.color-swatch--796 {background-image: url({{'swatch-796.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--802 {background-image: url({{'swatch-802.jpg' | file_img_url}});}
+.color-swatch.color-swatch--803 {background-image: url({{'swatch-803.jpg' | file_img_url}});}
+.color-swatch.color-swatch--804 {background-image: url({{'swatch-804.jpg' | file_img_url}});}
+.color-swatch.color-swatch--805 {background-image: url({{'swatch-805.jpg' | file_img_url}});}
+.color-swatch.color-swatch--806 {background-image: url({{'swatch-806.jpg' | file_img_url}});}
+.color-swatch.color-swatch--809 {background-image: url({{'swatch-809.jpg' | file_img_url}});}
+.color-swatch.color-swatch--rope-809 {background-image: url({{'swatch-rope-809.jpg' | file_img_url}});}
+.color-swatch.color-swatch--811 {background-image: url({{'swatch-rope-811.jpg' | file_img_url}});}
+.color-swatch.color-swatch--812 {background-image: url({{'swatch-rope-812.jpg' | file_img_url}});}
+.color-swatch.color-swatch--813 {background-image: url({{'swatch-rope-813.jpg' | file_img_url}});}
+.color-swatch.color-swatch--814 {background-image: url({{'swatch-rope-814.jpg' | file_img_url}});}
+.color-swatch.color-swatch--827 {background-image: url({{'swatch-rope-827.jpg' | file_img_url}});}
+.color-swatch.color-swatch--828 {background-image: url({{'swatch-rope-828.jpg' | file_img_url}});}
+.color-swatch.color-swatch--832 {background-image: url({{'swatch-ratchet-832.jpg' | file_img_url}});}
+.color-swatch.color-swatch--837 {background-image: url({{'swatch-rope-837.jpg' | file_img_url}});}
+.color-swatch.color-swatch--830 {background-color: #e76b9b;}
+.color-swatch.color-swatch--842 {background-image: url({{'swatch-rope-842.jpg' | file_img_url}});}
+.color-swatch.color-swatch--845 {background-image: url({{'swatch-rope-845.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--851 {background-image: url({{'swatch-rope-851.jpg' | file_img_url}});}
+.color-swatch.color-swatch--862 {background-image: url({{'swatch-rope-862.jpg' | file_img_url}});}
+.color-swatch.color-swatch--863 {background-image: url({{'swatch-rope-863.jpg' | file_img_url}});}
+.color-swatch.color-swatch--866 {background-image: url({{'swatch-rope-866.jpg' | file_img_url}});}
+.color-swatch.color-swatch--870 {background-image: url({{'swatch-rope-870.jpg' | file_img_url}});}
+.color-swatch.color-swatch--871 {background-image: url({{'swatch-rope-871.jpg' | file_img_url}});}
+.color-swatch.color-swatch--872 {background-image: url({{'swatch-colorado.jpg' | file_img_url}});}
+.color-swatch.color-swatch--874 {background-image: url({{'swatch-874.jpg' | file_img_url}});}
+.color-swatch.color-swatch--875 {background-image: url({{'swatch-875.jpg' | file_img_url}});}
+.color-swatch.color-swatch--876 {background-image: url({{'swatch-876.jpg' | file_img_url}});}
+.color-swatch.color-swatch--877 {background-image: url({{'swatch-877.png' | file_img_url}});}
+.color-swatch.color-swatch--new-877 {background-image: url({{'swatch-new-877.png' | file_img_url}});}
+.color-swatch.color-swatch--879 {background-image: url({{'swatch-879.jpg' | file_img_url}});}
+.color-swatch.color-swatch--880 {background-image: url({{'swatch-880.png' | file_img_url}});}
+.color-swatch.color-swatch--881 {background-image: url({{'swatch-881.png' | file_img_url}});}
+.color-swatch.color-swatch--new-881 {background-image: url({{'swatch-new-881.png' | file_img_url}});}
+.color-swatch.color-swatch--883 {background-image: url({{'swatch-883.jpg' | file_img_url}});}
+.color-swatch.color-swatch--884 {background-image: url({{'swatch-884.jpg' | file_img_url}});}
+.color-swatch.color-swatch--885 {background-image: url({{'swatch-885.jpg' | file_img_url}});}
+.color-swatch.color-swatch--886 {background-image: url({{'swatch-886.jpg' | file_img_url}});}
+.color-swatch.color-swatch--887 {background-image: url({{'swatch-887.jpg' | file_img_url}});}
+.color-swatch.color-swatch--888 {background-image: url({{'swatch-888.jpg' | file_img_url}});}
+.color-swatch.color-swatch--889 {background-image: url({{'swatch-889.jpg' | file_img_url}});}
+.color-swatch.color-swatch--890 {background-image: url({{'swatch-890.jpg' | file_img_url}});}
+.color-swatch.color-swatch--891 {background-image: url({{'swatch-891.jpg' | file_img_url}});}
+.color-swatch.color-swatch--892 {background-image: url({{'swatch-892.jpg' | file_img_url}});}
+.color-swatch.color-swatch--893 {background-image: url({{'swatch-893.jpg' | file_img_url}});}
+.color-swatch.color-swatch--894 {background-image: url({{'swatch-894.jpg' | file_img_url}});}
+.color-swatch.color-swatch--895 {background-image: url({{'swatch-895.jpg' | file_img_url}});}
+.color-swatch.color-swatch--896 {background-image: url({{'swatch-896.jpg' | file_img_url}});}
+.color-swatch.color-swatch--898 {background-image: url({{'swatch-898.jpg' | file_img_url}});}
+.color-swatch.color-swatch--899 {background-image: url({{'swatch-899.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--903 {background-image: url({{'swatch-903.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ltd-911 {background-image: url({{'swatch-ltd-911.jpg' | file_img_url}});}
+.color-swatch.color-swatch--915 {background-image: url({{'swatch-915.png' | file_img_url}});}
+.color-swatch.color-swatch--920 {background-image: url({{'swatch-920.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-920 {background-image: url({{'swatch-new-920.png' | file_img_url}});}
+.color-swatch.color-swatch--new-neo-920 {background-image: url({{'swatch-new-neo-920.png' | file_img_url}});}
+.color-swatch.color-swatch--neo-920 {background-image: url({{'swatch-neo-920.jpg' | file_img_url}});}
+.color-swatch.color-swatch--921 {background-image: url({{'swatch-921.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-921 {background-image: url({{'swatch-new-921.png' | file_img_url}});}
+.color-swatch.color-swatch--new-neo-921 {background-image: url({{'swatch-new-neo-921.png' | file_img_url}});}
+.color-swatch.color-swatch--neo-921 {background-image: url({{'swatch-neo-921.jpg' | file_img_url}});}
+.color-swatch.color-swatch--922 {background-image: url({{'swatch-922.jpg' | file_img_url}});}
+.color-swatch.color-swatch--neo-922 {background-image: url({{'swatch-neo-922.jpg' | file_img_url}});}
+.color-swatch.color-swatch--937 {background-image: url({{'swatch-937.jpg' | file_img_url}});}
+.color-swatch.color-swatch--938 {background-image: url({{'swatch-938.jpg' | file_img_url}});}
+.color-swatch.color-swatch--939 {background-image: url({{'swatch-939.jpg' | file_img_url}});}
+.color-swatch.color-swatch--940 {background-image: url({{'swatch-940.jpg' | file_img_url}});}
+.color-swatch.color-swatch--941 {background-image: url({{'swatch-941.jpg' | file_img_url}});}
+.color-swatch.color-swatch--942 {background-image: url({{'swatch-942.jpg' | file_img_url}});}
+.color-swatch.color-swatch--943 {background-image: url({{'swatch-943.jpg' | file_img_url}});}
+.color-swatch.color-swatch--944 {background-image: url({{'swatch-944.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--950 {background-image: url({{'swatch-950.jpg' | file_img_url}});}
+.color-swatch.color-swatch--951 {background-image: url({{'swatch-951.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-951 {background-image: url({{'swatch-new-951.png' | file_img_url}});}
+.color-swatch.color-swatch--990 {background-image: url({{'swatch-990.png' | file_img_url}});}
+.color-swatch.color-swatch--new-990 {background-image: url({{'swatch-new-990.png' | file_img_url}});}
+.color-swatch.color-swatch--991 {background-image: url({{'swatch-991.png' | file_img_url}});}
+.color-swatch.color-swatch--new-991 {background-image: url({{'swatch-new-991.png' | file_img_url}});}
+.color-swatch.color-swatch--996 {background-image: url({{'swatch-996.png' | file_img_url}});}
+.color-swatch.color-swatch--new-996 {background-image: url({{'swatch-new-996.png' | file_img_url}});}
+.color-swatch.color-swatch--997 {background-image: url({{'swatch-997.png' | file_img_url}});}
+.color-swatch.color-swatch--new-997 {background-image: url({{'swatch-new-997.png' | file_img_url}});}
+.color-swatch.color-swatch--ssw-999 {background-image: url({{'swatch-ssw-999.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--1008 {background-image: url({{'swatch-1008.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1008 {background-image: url({{'swatch-new-1008.png' | file_img_url}});}
+.color-swatch.color-swatch--1010 {background-image: url({{'swatch-1010.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1012 {background-image: url({{'swatch-1012.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1012 {background-image: url({{'swatch-new-1012.png' | file_img_url}});}
+.color-swatch.color-swatch--1014 {background-image: url({{'swatch-1014.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1019 {background-image: url({{'swatch-1019.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1020 {background-image: url({{'swatch-1020.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-1020 {background-image: url({{'swatch-new-1020.png' | file_img_url}});}
+.color-swatch.color-swatch--1021 {background-image: url({{'swatch-1021.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1022 {background-image: url({{'swatch-1022.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1022 {background-image: url({{'swatch-new-1022.png' | file_img_url}});}
+.color-swatch.color-swatch--1025 {background-image: url({{'swatch-1025.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1026 {background-image: url({{'swatch-1026.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1026 {background-image: url({{'swatch-new-1026.png' | file_img_url}});}
+.color-swatch.color-swatch--1027 {background-image: url({{'swatch-1027.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1027 {background-image: url({{'swatch-new-1027.png' | file_img_url}});}
+.color-swatch.color-swatch--1028 {background-image: url({{'swatch-1028.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1028 {background-image: url({{'swatch-new-1028.png' | file_img_url}});}
+.color-swatch.color-swatch--1029 {background-image: url({{'swatch-1029.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1029 {background-image: url({{'swatch-new-1029.png' | file_img_url}});}
+.color-swatch.color-swatch--1030 {background-image: url({{'swatch-1030.jpg' | file_img_url}});}
+.color-swatch.color-swatch--new-1030 {background-image: url({{'swatch-new-1030.png' | file_img_url}});}
+.color-swatch.color-swatch--1031 {background-image: url({{'swatch-1031.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1033 {background-image: url({{'swatch-1033.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1033 {background-image: url({{'swatch-new-1033.png' | file_img_url}});}
+.color-swatch.color-swatch--1034 {background-image: url({{'swatch-1034.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1034 {background-image: url({{'swatch-new-1034.png' | file_img_url}});}
+.color-swatch.color-swatch--1041 {background-image: url({{'swatch-1041.png' | file_img_url}});}
+.color-swatch.color-swatch--new-1041 {background-image: url({{'swatch-new-1041.png' | file_img_url}});}
 
 
-.color-swatch.color-swatch--ss103 {--background-image: url({{'swatch-103.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss117 {--background-image: url({{'swatch-117.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss127 {--background-image: url({{'swatch-127.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss146 {--background-image: url({{'swatch-146.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss158 {--background-image: url({{'swatch-158.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss169 {--background-image: url({{'swatch-169.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss171 {--background-image: url({{'swatch-171.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss172 {--background-image: url({{'swatch-172.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss173 {--background-image: url({{'swatch-173.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ss174 {--background-image: url({{'swatch-174.jpg' | file_img_url}});}
+.color-swatch.color-swatch--100-seersucker {background-image: url({{'swatch-100.jpg' | file_img_url}});}
+.color-swatch.color-swatch--101-seersucker {background-image: url({{'swatch-101.jpg' | file_img_url}});}
+.color-swatch.color-swatch--106-seersucker {background-image: url({{'swatch-106.jpg' | file_img_url}});}
+.color-swatch.color-swatch--109-seersucker {background-image: url({{'swatch-109.jpg' | file_img_url}});}
+.color-swatch.color-swatch--166-seersucker {background-image: url({{'swatch-166.jpg' | file_img_url}});}
+.color-swatch.color-swatch--601-seersucker {background-image: url({{'swatch-601.jpg' | file_img_url}});}
+.color-swatch.color-swatch--781-seersucker {background-image: url({{'swatch-781.jpg' | file_img_url}});}
+
+
+.color-swatch.color-swatch--ss103 {background-image: url({{'swatch-103.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss117 {background-image: url({{'swatch-117.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss127 {background-image: url({{'swatch-127.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss146 {background-image: url({{'swatch-146.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss158 {background-image: url({{'swatch-158.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss169 {background-image: url({{'swatch-169.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss171 {background-image: url({{'swatch-171.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss172 {background-image: url({{'swatch-172.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss173 {background-image: url({{'swatch-173.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ss174 {background-image: url({{'swatch-174.jpg' | file_img_url}});}
 
 
 .color-swatch.color-swatch--337,
-.color-swatch.color-swatch--rt-max4 {--background-image: url({{'swatch-rt-max4.png' | file_img_url}});}
+.color-swatch.color-swatch--rt-max4 {background-image: url({{'swatch-rt-max4.png' | file_img_url}});}
 .color-swatch.color-swatch--338,
-.color-swatch.color-swatch--rt-apb {--background-image: url({{'swatch-rt-apb.png' | file_img_url}});}
+.color-swatch.color-swatch--rt-apb {background-image: url({{'swatch-rt-apb.png' | file_img_url}});}
 .color-swatch.color-swatch--339,
-.color-swatch.color-swatch--rt-apc {--background-image: url({{'swatch-rt-apc.png' | file_img_url}});}
+.color-swatch.color-swatch--rt-apc {background-image: url({{'swatch-rt-apc.png' | file_img_url}});}
 .color-swatch.color-swatch--349,
-.color-swatch.color-swatch--rt-xtra {--background-image: url({{'swatch-rt-xtra.png' | file_img_url}});}
+.color-swatch.color-swatch--rt-xtra {background-image: url({{'swatch-rt-xtra.png' | file_img_url}});}
 .color-swatch.color-swatch--351,
-.color-swatch.color-swatch--rt-edge {--background-image: url({{'swatch-rt-edge.jpg' | file_img_url}});}
+.color-swatch.color-swatch--rt-edge {background-image: url({{'swatch-rt-edge.jpg' | file_img_url}});}
 
 
-.color-swatch.color-swatch--100-101 {--background-image: url({{'swatch-100-101.png' | file_img_url}});}
-.color-swatch.color-swatch--108-136 {--background-image: url({{'swatch-108-136.png' | file_img_url}});}
+.color-swatch.color-swatch--100-101 {background-image: url({{'swatch-100-101.png' | file_img_url}});}
+.color-swatch.color-swatch--108-136 {background-image: url({{'swatch-108-136.png' | file_img_url}});}
 
-.color-swatch.color-swatch--transit-blue-navy {--background-image: url({{'swatch-100-101.png' | file_img_url}});}
-.color-swatch.color-swatch--transit-grey {--background-image: url({{'swatch-transit-grey.jpg' | file_img_url}});}
-.color-swatch.color-swatch--transit-green {--background-image: url({{'swatch-transit-green.jpg' | file_img_url}});}
-.color-swatch.color-swatch--transit-red {--background-image: url({{'swatch-transit-red.jpg' | file_img_url}});}
-.color-swatch.color-swatch--transit-charcoal {--background-image: url({{'swatch-transit-charcoal.png' | file_img_url}});}
-.color-swatch.color-swatch--transit-pink {--background-image: url({{'swatch-transit-pink.png' | file_img_url}});}
-.color-swatch.color-swatch--transit-sulfur {--background-image: url({{'swatch-transit-sulfur.png' | file_img_url}});}
-.color-swatch.color-swatch--transit-white {--background-image: url({{'swatch-transit-white.png' | file_img_url}});}
-
-
-
-.color-swatch.color-swatch--js-black {--background-image: url({{'swatch-js-black.jpg' | file_img_url}});}
-.color-swatch.color-swatch--js-grey {--background-image: url({{'swatch-js-grey.jpg' | file_img_url}});}
-.color-swatch.color-swatch--js-totemfish {--background-image: url({{'swatch-js-totemfish.jpg' | file_img_url}});}
-.color-swatch.color-swatch--js-rt-xtra {--background-image: url({{'swatch-js-rt-xtra.jpg' | file_img_url}});}
-
-.color-swatch.color-swatch--1002 {--background-image: url({{'swatch-1002.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1003 {--background-image: url({{'swatch-1003.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1004 {--background-image: url({{'swatch-1004.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1005 {--background-image: url({{'swatch-1005.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ssw-1006 {--background-image: url({{'swatch-ssw-1006.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ltd-1006 {--background-image: url({{'swatch-ltd-1006.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1011 {--background-image: url({{'swatch-1011.jpg' | file_img_url}});}
-.color-swatch.color-swatch--1013 {--background-image: url({{'swatch-1013.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ssw-1015 {--background-image: url({{'swatch-ssw-1015.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ret-1015 {--background-image: url({{'swatch-ret-1015.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ssw-1050a {--background-image: url({{'swatch-ssw-1050a.jpg' | file_img_url}});}
-.color-swatch.color-swatch--ssw-1050b {--background-image: url({{'swatch-ssw-1050b.jpg' | file_img_url}});}
-.color-swatch.color-swatch--neo-1050 {--background-image: url({{'swatch-neo-1050.jpg' | file_img_url}});}
-.color-swatch.color-swatch--shirt-1050a {--background-image: url({{'swatch-shirt-1050a.jpg' | file_img_url}});}
-.color-swatch.color-swatch--shirt-1050b {--background-image: url({{'swatch-shirt-1050b.jpg' | file_img_url}});}
-.color-swatch.color-swatch--hat-1050a {--background-image: url({{'swatch-hat-1050a.jpg' | file_img_url}});}
-.color-swatch.color-swatch--hat-1050b {--background-image: url({{'swatch-hat-1050b.jpg' | file_img_url}});}
+.color-swatch.color-swatch--transit-blue-navy {background-image: url({{'swatch-100-101.png' | file_img_url}});}
+.color-swatch.color-swatch--transit-grey {background-image: url({{'swatch-transit-grey.jpg' | file_img_url}});}
+.color-swatch.color-swatch--transit-green {background-image: url({{'swatch-transit-green.jpg' | file_img_url}});}
+.color-swatch.color-swatch--transit-red {background-image: url({{'swatch-transit-red.jpg' | file_img_url}});}
+.color-swatch.color-swatch--transit-charcoal {background-image: url({{'swatch-transit-charcoal.png' | file_img_url}});}
+.color-swatch.color-swatch--transit-pink {background-image: url({{'swatch-transit-pink.png' | file_img_url}});}
+.color-swatch.color-swatch--transit-sulfur {background-image: url({{'swatch-transit-sulfur.png' | file_img_url}});}
+.color-swatch.color-swatch--transit-white {background-image: url({{'swatch-transit-white.png' | file_img_url}});}
 
 
-.color-swatch.color-swatch--kq100 {--background-image: url({{'swatch-kq100.jpg' | file_img_url}});}
-.color-swatch.color-swatch--kq132 {--background-image: url({{'swatch-kq132.jpg' | file_img_url}});}
-.color-swatch.color-swatch--kq160 {--background-image: url({{'swatch-kq160.jpg' | file_img_url}});}
-.color-swatch.color-swatch--kq877 {--background-image: url({{'swatch-kq877.jpg' | file_img_url}});}
-.color-swatch.color-swatch--kq878 {--background-image: url({{'swatch-kq878.jpg' | file_img_url}});}
 
-.color-swatch.color-swatch--14057 {--background-image: url({{'swatch-14057.png' | file_img_url}});}
-.color-swatch.color-swatch--14058 {--background-image: url({{'swatch-14058.png' | file_img_url}});}
-.color-swatch.color-swatch--14059 {--background-image: url({{'swatch-14059.png' | file_img_url}});}
+.color-swatch.color-swatch--js-black {background-image: url({{'swatch-js-black.jpg' | file_img_url}});}
+.color-swatch.color-swatch--js-grey {background-image: url({{'swatch-js-grey.jpg' | file_img_url}});}
+.color-swatch.color-swatch--js-totemfish {background-image: url({{'swatch-js-totemfish.jpg' | file_img_url}});}
+.color-swatch.color-swatch--js-rt-xtra {background-image: url({{'swatch-js-rt-xtra.jpg' | file_img_url}});}
 
-.color-swatch.color-swatch--99710 {--background-image: url({{'swatch-99710.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99711 {--background-image: url({{'swatch-99711.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99712 {--background-image: url({{'swatch-99712.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99713 {--background-image: url({{'swatch-99713.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99714 {--background-image: url({{'swatch-99714.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99715 {--background-image: url({{'swatch-99715.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99716 {--background-image: url({{'swatch-99716.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99717 {--background-image: url({{'swatch-99717.jpg' | file_img_url}});}
-.color-swatch.color-swatch--99718 {--background-image: url({{'swatch-99718.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1002 {background-image: url({{'swatch-1002.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1003 {background-image: url({{'swatch-1003.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1004 {background-image: url({{'swatch-1004.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1005 {background-image: url({{'swatch-1005.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ssw-1006 {background-image: url({{'swatch-ssw-1006.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ltd-1006 {background-image: url({{'swatch-ltd-1006.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1011 {background-image: url({{'swatch-1011.jpg' | file_img_url}});}
+.color-swatch.color-swatch--1013 {background-image: url({{'swatch-1013.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ssw-1015 {background-image: url({{'swatch-ssw-1015.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ret-1015 {background-image: url({{'swatch-ret-1015.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ssw-1050a {background-image: url({{'swatch-ssw-1050a.jpg' | file_img_url}});}
+.color-swatch.color-swatch--ssw-1050b {background-image: url({{'swatch-ssw-1050b.jpg' | file_img_url}});}
+.color-swatch.color-swatch--neo-1050 {background-image: url({{'swatch-neo-1050.jpg' | file_img_url}});}
+.color-swatch.color-swatch--shirt-1050a {background-image: url({{'swatch-shirt-1050a.jpg' | file_img_url}});}
+.color-swatch.color-swatch--shirt-1050b {background-image: url({{'swatch-shirt-1050b.jpg' | file_img_url}});}
+.color-swatch.color-swatch--hat-1050a {background-image: url({{'swatch-hat-1050a.jpg' | file_img_url}});}
+.color-swatch.color-swatch--hat-1050b {background-image: url({{'swatch-hat-1050b.jpg' | file_img_url}});}
+
+
+.color-swatch.color-swatch--kq100 {background-image: url({{'swatch-kq100.jpg' | file_img_url}});}
+.color-swatch.color-swatch--kq132 {background-image: url({{'swatch-kq132.jpg' | file_img_url}});}
+.color-swatch.color-swatch--kq160 {background-image: url({{'swatch-kq160.jpg' | file_img_url}});}
+.color-swatch.color-swatch--kq877 {background-image: url({{'swatch-kq877.jpg' | file_img_url}});}
+.color-swatch.color-swatch--kq878 {background-image: url({{'swatch-kq878.jpg' | file_img_url}});}
+
+.color-swatch.color-swatch--14057 {background-image: url({{'swatch-14057.png' | file_img_url}});}
+.color-swatch.color-swatch--14058 {background-image: url({{'swatch-14058.png' | file_img_url}});}
+.color-swatch.color-swatch--14059 {background-image: url({{'swatch-14059.png' | file_img_url}});}
+
+.color-swatch.color-swatch--99710 {background-image: url({{'swatch-99710.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99711 {background-image: url({{'swatch-99711.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99712 {background-image: url({{'swatch-99712.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99713 {background-image: url({{'swatch-99713.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99714 {background-image: url({{'swatch-99714.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99715 {background-image: url({{'swatch-99715.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99716 {background-image: url({{'swatch-99716.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99717 {background-image: url({{'swatch-99717.jpg' | file_img_url}});}
+.color-swatch.color-swatch--99718 {background-image: url({{'swatch-99718.jpg' | file_img_url}});}
+

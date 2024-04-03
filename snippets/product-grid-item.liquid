@@ -44,8 +44,35 @@ Arguments
       endif
     endfor
   endif
--%}
 
+    # chums customization for new item
+    assign new_item = false
+ assign has_new_colors = false
+ for tag in product.tags
+     assign _tag = tag | lowercase
+     if _tag == 'new'
+         assign new_item = true
+     endif
+     if _tag == 'new-colors'  or _tag == 'new-color'
+         assign has_new_colors = true
+     endif
+ endfor
+
+
+-%}
+{% style %}
+    .grid-product__tag.grid-product__tag--new {
+    background-color: transparent;
+    background-image: url(//cdn.shopify.com/s/files/1/0093/8908/0661/files/new-icon_small.png?v=3905606014438448190);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    }
+{% endstyle %}
+<strong>Test</strong>
+<!-- {{ product.tags | json }}; new_item = {{ new_item |  json }}; sold_out = {{ sold_out | json }}; -->
 <div class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
@@ -63,6 +90,10 @@ Arguments
           {{ 'products.general.sale' | t }}
         </div>
       {%- endif -%}
+        {% if new_item == true and product.available %}
+            <div class="grid-product__tag grid-product__tag--new" role="img" aria-label="New Item">
+            </div>
+        {% endif %}
     {%- endif -%}
 
     {%- liquid
