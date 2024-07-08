@@ -51,7 +51,6 @@
     "product_hover_image": false,
     "enable_swatches": false,
     "swatch_style": "square",
-    "enable_product_reviews": true,
     "collection_grid_style": "below",
     "collection_grid_shape": "square",
     "collection_grid_image": "collection",

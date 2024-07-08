@@ -3,9 +3,9 @@
     "name": "theme_info",
     "theme_name": "Impulse",
     "theme_author": "Archetype Themes",
-    "theme_version": "7.4.1",
-    "theme_documentation_url": "https:\/\/archetypethemes.co\/blogs\/impulse",
-    "theme_support_url": "https:\/\/archetypethemes.co\/pages\/support#impulse"
+    "theme_version": "7.5.0",
+    "theme_documentation_url": "https://archetypethemes.co/blogs/impulse",
+    "theme_support_url": "https://archetypethemes.co/pages/support#impulse"
   },
   {
     "name": "t:settings_schema.colors.name",
@@ -660,19 +660,6 @@
             "label": "t:settings_schema.product_tiles.settings.swatch_style.options.square.label"
           }
         ]
-      },
-      {
-        "type": "header",
-        "content": "t:settings_schema.product_tiles.settings.header_product_reviews"
-      },
-      {
-        "type": "paragraph",
-        "content": "t:settings_schema.product_tiles.settings.content"
-      },
-      {
-        "type": "checkbox",
-        "label": "t:settings_schema.product_tiles.settings.enable_product_reviews.label",
-        "id": "enable_product_reviews"
       }
     ]
   },

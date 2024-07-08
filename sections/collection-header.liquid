@@ -28,7 +28,6 @@
           </parallax-image>
         {%- endif -%}
 
-                {% if section.settings.collection_title_below == false %}
         <div class="collection-hero__content">
           <div class="page-width">
             <header class="section-header section-header--hero">
@@ -41,7 +40,6 @@
             </header>
           </div>
         </div>
-                {% endif %}
       </div>
     </div>
   {%- else -%}
@@ -69,19 +67,6 @@
     data-section-type="collection-header">
   </div>
 {%- endif -%}
-
-{% if section.settings.collection_title_below == true and collection.image %}
-    <div class="collection-hero__title">
-        <div class="page-width">
-            <header class="section-header section-header--title">
-                {%- render 'breadcrumbs' -%}
-                <h1 class="section-header__title">
-                    {{ collection.title }}
-                </h1>
-            </header>
-        </div>
-    </div>
-{% endif %}
 
 {% schema %}
 {
@@ -120,12 +105,6 @@
           "label": "t:sections.background-image-text.settings.parallax_direction.options.left.label"
         }
       ]
-    },
-    {
-      "type": "checkbox",
-      "id": "collection_title_below",
-      "label": "Show title below collection image",
-      "default": false
     }
   ],
   "disabled_on": {

@@ -32,7 +32,7 @@
           <input type="hidden" name="contact[context]" value="footer">
           <div class="footer__newsletter">
             <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter_form.newsletter_email' | t }}" name="contact[email]" id="Email-{{ block.id }}" class="footer__newsletter-input" autocorrect="off" autocapitalize="off" required>
-            <button type="submit" id="newsletter-submit-{{ block.id }}" class="footer__newsletter-btn" name="commit" aria-label="{{ 'general.newsletter_form.submit' | t | escape }}">
+            <button type="submit" id="newsletter-submit-{{ block.id }}" class="footer__newsletter-btn" name="commit">
               <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-email" viewBox="0 0 64 64"><title>icon-email</title><path d="M63 52H1V12h62ZM1 12l25.68 24h9.72L63 12M21.82 31.68 1.56 51.16m60.78.78L41.27 31.68"/></svg>
               <span class="footer__newsletter-btn-label">
                 {{ 'general.newsletter_form.submit' | t }}

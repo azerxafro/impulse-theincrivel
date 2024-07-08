@@ -86,18 +86,12 @@
         "narrow_column": true,
         "divider": false
       }
-    },
-    "cace2760-8e07-4286-b392-238d516d9c09": {
-      "type": "pro-contact-form",
-      "settings": {
-      }
     }
   },
   "order": [
     "main",
     "a65ff1a9-a04c-4d3e-9d7f-7bc96d9bb88e",
     "f4ff5d0a-5fd8-4b72-8f45-018d478ffd54",
-    "1ff05a4a-2159-453d-8a3f-364f161b0dfa",
-    "cace2760-8e07-4286-b392-238d516d9c09"
+    "1ff05a4a-2159-453d-8a3f-364f161b0dfa"
   ]
 }
