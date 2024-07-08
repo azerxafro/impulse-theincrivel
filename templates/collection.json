@@ -6,7 +6,8 @@
         "enable": true,
         "collection_image_enable": true,
         "parallax": true,
-        "parallax_direction": "top"
+        "parallax_direction": "top",
+        "collection_title_below": true
       }
     },
     "main-collection": {

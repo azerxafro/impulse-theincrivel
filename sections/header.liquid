@@ -100,11 +100,12 @@
       {%- endif -%}
       <header
         id="SiteHeader"
+        role="presentation"
         class="site-header{% if settings.type_navigation_style == 'heading' %} site-header--heading-style{% endif %}"
         data-sticky="{{ sticky_header }}"
         data-overlay="{{ overlay_header }}">
         <div class="page-width">
-          <div
+          <div role="navigation"
             class="header-layout header-layout--{{ section.settings.main_menu_alignment }}"
             data-logo-align="{{ logo_alignment }}">
 

@@ -46,7 +46,8 @@
       ],
       "disabled": true,
       "settings": {
-        "hide_homepage": false
+        "hide_homepage": false,
+        "image_size": "wide"
       }
     },
     "footer": {
@@ -76,12 +77,21 @@
             "text": "<p>Subscribe to get special offers, free giveaways, and once-in-a-lifetime deals.<\/p>",
             "container_width": 25
           }
+        },
+        "b3a4f1b8-8ea5-4368-bafa-0d1616e11b0a": {
+          "type": "page_link",
+          "settings": {
+            "page_link_text": "Find a Store",
+            "page_link_url": "shopify:\/\/pages\/find-a-store",
+            "container_width": 25
+          }
         }
       },
       "block_order": [
         "footer-1",
         "805620e5-f428-499f-aefa-d5b94c442f56",
-        "footer2"
+        "footer2",
+        "b3a4f1b8-8ea5-4368-bafa-0d1616e11b0a"
       ],
       "settings": {
         "show_locale_selector": false,

@@ -26,10 +26,17 @@
         "bottom_padding": true,
         "lazyload_images": true
       }
+    },
+    "c831532e-bb03-40d3-a910-6e25f2a71a47": {
+      "type": "open-positions-live",
+      "settings": {
+        "show_careers": true
+      }
     }
   },
   "order": [
     "main",
-    "7a2d4ba1-1c82-491d-bcf9-44b9630e0d9a"
+    "7a2d4ba1-1c82-491d-bcf9-44b9630e0d9a",
+    "c831532e-bb03-40d3-a910-6e25f2a71a47"
   ]
 }
