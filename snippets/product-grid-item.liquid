@@ -71,8 +71,6 @@ Arguments
     height: 40px;
     }
 {% endstyle %}
-<strong>Test</strong>
-<!-- {{ product.tags | json }}; new_item = {{ new_item |  json }}; sold_out = {{ sold_out | json }}; -->
 <div class="grid__item grid-product {{ gridView }} {% if quick_shop_enable %} grid-product__has-quick-shop{% endif %}" data-aos="row-of-{{ per_row }}" data-product-handle="{{ product.handle }}" data-product-id="{{ product.id }}">
   <div class="grid-product__content">
     {%- if has_custom_label -%}
